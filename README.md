@@ -12,9 +12,7 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
 
 4. Criem um programa que represente o fluxograma abaixo:
 
-<center>
 ![fluxograma](tecnicas-de-desenvolvimento-de-algoritmos-t1-t2/assets/img/ex4.png)
-</center>
 
 5. Determinar se um número é par ou ímpar e positivo ou negativo.
 
