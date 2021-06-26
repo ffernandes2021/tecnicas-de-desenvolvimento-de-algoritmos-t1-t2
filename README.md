@@ -38,6 +38,7 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
     - para mulheres: (62.1 * h) - 44.7
 
 13. Um vendedor necessita de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a tabela abaixo. Se o código digitado não existir, peça ao usuário que entre com um código válido.
+
 | **Código do produto** | **Preço por unidade** |
 | :----:                |:----:                 |
 | 1001                  | R$ 5,32               |
@@ -47,6 +48,12 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
 | 7623                  | R$ 6,45               |
 
 14. Uma empresa concederá um aumento de salário aos seus funcionários, variável de acordo com o cargo, conforme a tabela abaixo. Faça um algoritmo que leia o salário e o cargo de um funcionário (por meio do código) e calcule o novo salário. Se o cargo do funcionário não estiver na tabela, ele deverá, então, receber 40% de aumento. Mostre o salário antigo, o novo salário e a diferença.
+
+| **Código** | **Cargo** | **Percentual** |
+| :----:     |:----:     | :----:         |
+| 101        | Gerente   | 10%            |
+| 102        | Engenheiro| 20%            |
+| 103        | Técnico   | 30%            |
 
 15. Escrever um algoritmo que lê um conjunto de 4 valores i, a, b, c, onde i é um valor inteiro e positivo e a, b, c, são quaisquer valores reais e os escreva. A seguir:
     - Se i = 1 escrever os três valores a, b, c em ordem crescente.
