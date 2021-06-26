@@ -4,8 +4,6 @@ Olá, aluno(a),
 
 Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](https://visualg3.com.br/). Realizem os exercícios e compartilhem com os colegas.
 
-![layout!](aplicacoes-para-internet-t2/assets/img/readme.jpg)
-
 1. Criem um programa que imprima a tabuada do número 9. Algo como 9x1 = 9, 9x2 = 18... imprima cada expressão em uma linha.
 
 2. Criem um programa que ao usuário digitar um número, o programa exiba o mês correspondente. Utilizem ESCOLHA. Validem a entrada do usuário para números válidos (1-12). Valores fora deste intervalo, devem imprimir "Mês inválido! Tente novamente" e permitir que o usuário entre com um novo valor. O programa encerra digitando 0 (zero).
@@ -13,6 +11,10 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
 3. Criem um vetor de 100 posições que é preenchido apenas por números primos. Utilize uma estrutura de repetição para popular o vetor. Por fim, imprima os valores em tela.
 
 4. Criem um programa que represente o fluxograma abaixo:
+
+<center>
+![fluxograma](tecnicas-de-desenvolvimento-de-algoritmos-t1-t2/assets/img/ex4.png)
+</center>
 
 5. Determinar se um número é par ou ímpar e positivo ou negativo.
 

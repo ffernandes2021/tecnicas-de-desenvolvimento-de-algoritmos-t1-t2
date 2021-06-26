@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>TÉCNICAS DE DESENVOLVIMENTO DE ALGORITMOS (1463)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css">
+    </head>
+    <body>
+        <div id="conteudo">
+            <div id="header">
+                <h4 class="truncate"><strong>TÉCNICAS DE DESENVOLVIMENTO DE ALGORITMOS</strong></h4>
+                <p>VisuAlg 3.0.7.0</p>
+            </div>
+            <p>1. Criem um programa que imprima a tabuada do número 9. Algo como 9x1 = 9, 9x2 = 18... imprima cada expressão em uma linha.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio1"</span>
+    <span class="cor1">var</span> <strong>i</strong>, <strong>resultado</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">10</span> <span class="cor1">faca</span>
+        <strong>resultado</strong> &#60;- <span class="cor2">9</span> * <strong>i</strong>
+        <span class="cor1">escreval</span>(<span class="cor2">"9 *"</span>,<strong>i</strong>,<span class="cor2">" ="</span>,<strong>resultado</strong>)
+    <span class="cor1">fimpara</span>
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio1.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio1.alg</span></a></p>
+            <hr>
+            <p>2. Criem um programa que ao usuário digitar um número, o programa exiba o mês correspondente. Utilizem ESCOLHA. Validem a entrada do usuário para números válidos (1-12). Valores fora deste intervalo, devem imprimir "Mês inválido! Tente novamente" e permitir que o usuário entre com um novo valor. O programa encerra digitando 0 (zero).</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio2"</span>
+    <span class="cor1">var</span> <strong>numero</strong>, <strong>mes</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">repita</span>
+        <span class="cor1">escreva</span>(<span class="cor2">"Digite o mês [1 - 12] ou [0] para sair:"</span>)
+        <span class="cor1">leia</span>(<strong>mes</strong>)
+        <span class="cor1">se</span> <strong>mes</strong> = <span class="cor2">0</span> <span class="cor1">entao</span>
+            <span class="cor1">escreval</span>(<span class="cor2">"Encerrado"</span>)
+        <span class="cor1">senao</span>
+            <span class="cor1">escolha</span> <strong>mes</strong>
+                <span class="cor1">caso</span> <span class="cor2">1</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Janeiro"</span>)
+                <span class="cor1">caso</span> <span class="cor2">2</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Fevereiro"</span>)
+                <span class="cor1">caso</span> <span class="cor2">3</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Março"</span>)
+                <span class="cor1">caso</span> <span class="cor2">4</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Abril"</span>)
+                <span class="cor1">caso</span> <span class="cor2">5</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Maio"</span>)
+                <span class="cor1">caso</span> <span class="cor2">6</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Junho"</span>)
+                <span class="cor1">caso</span> <span class="cor2">7</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Julho"</span>)
+                <span class="cor1">caso</span> <span class="cor2">8</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Agosto"</span>)
+                <span class="cor1">caso</span> <span class="cor2">9</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Setembro"</span>)
+                <span class="cor1">caso</span> <span class="cor2">10</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Outubro"</span>)
+                <span class="cor1">caso</span> <span class="cor2">11</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Novembro"</span>)
+                <span class="cor1">caso</span> <span class="cor2">12</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Dezembro"</span>)
+                <span class="cor1">outrocaso</span>
+                    <span class="cor1">escreval</span>(<span class="cor2">"Mês invalido! Tente novamente."</span>)
+            <span class="cor1">fimescolha</span>
+        <span class="cor1">fimse</span>
+    <span class="cor1">ate</span> <strong>mes</strong> = <span class="cor2">0</span>    
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio2.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio2.alg</span></a></p>
+            <hr>
+            <p>3. Criem um vetor de 100 posições que é preenchido apenas por números primos. Utilize uma estrutura de repetição para popular o vetor. Por fim, imprima os valores em tela.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio3"</span>
+    <span class="cor1">var</span> <strong>vet</strong>: <span class="cor3">vetor</span> [<span class="cor2">1..100</span>] <span class="cor1">de</span> <span class="cor3">inteiro</span>
+    <strong>i</strong>, <strong>numero</strong>, <strong>quantidade</strong>, <strong>cont</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <strong>cont</strong> &#60;- <span class="cor2">0</span>
+    <strong>numero</strong> &#60;- <span class="cor2">1</span>
+    <span class="cor1">enquanto</span> <strong>cont</strong> &#60; <span class="cor2">100</span> <span class="cor1">faca</span>
+        <strong>quantidade</strong> &#60;- <span class="cor2">0</span>
+        <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <strong>numero</strong> <span class="cor1">faca</span>
+            <span class="cor1">se</span> <strong>numero</strong> % <strong>i</strong> = <span class="cor2">0</span> <span class="cor1">entao</span>
+                <strong>quantidade</strong> &#60;- <strong>quantidade</strong> + <span class="cor2">1</span>
+            <span class="cor1">fimse</span>
+        <span class="cor1">fimpara</span>
+        <span class="cor1">se</span> <strong>quantidade</strong> = <span class="cor2">2</span> <span class="cor1">entao</span>
+            <strong>cont</strong> &#60;- <strong>cont</strong> + <span class="cor2">1</span>
+            <strong>vet</strong>[<strong>cont</strong>] &#60;- <strong>numero</strong>
+        <span class="cor1">fimse</span>
+        <strong>numero</strong> &#60;- <strong>numero</strong> + <span class="cor2">1</span>
+    <span class="cor1">fimenquanto</span>
+    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">100</span> <span class="cor1">faca</span>
+        <span class="cor1">escreval</span>(<strong>vet</strong>[<strong>i</strong>])
+    <span class="cor1">fimpara</span>
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio3.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio3.alg</span></a></p>
+            <hr>
+            <p>4. Criem um programa que represente o fluxograma abaixo:</p>
+            <p><img src="assets/img/ex4.png" alt="Fluxograma que testa se A é maior, menor ou igual a B" class="img-responsive"></p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio4"</span>
+    <span class="cor1">var</span> <strong>a</strong>, <strong>b</strong>: <span class="cor3">inteiro</span>
+    <span class="cor1">funcao</span> <strong>testar</strong>(<strong>valorA</strong>, <strong>valorB</strong>: <span class="cor3">inteiro</span>): <span class="cor3">inteiro</span>
+    <span class="cor1">inicio</span>
+        <span class="cor1">se</span> <strong>valorA</strong> = <span class="cor2">0</span> <span class="cor1">entao</span>
+            <span class="cor1">se</span> <strong>valorB</strong> = <span class="cor2">0</span> <span class="cor1">entao</span>
+                <span class="cor1">escreva</span>(<span class="cor2">"A = B"</span>)
+            <span class="cor1">senao</span>
+                <span class="cor1">escreva</span>(<span class="cor2">"A &#60; B"</span>)
+            <span class="cor1">fimse</span>
+        <span class="cor1">senao</span>
+            <span class="cor1">se</span> <strong>valorB</strong> = <span class="cor2">0</span> <span class="cor1">entao</span>
+                <span class="cor1">escreva</span>(<span class="cor2">"A &#62; B"</span>)
+            <span class="cor1">senao</span>
+                <strong>valorA</strong> &#60;- <strong>valorA</strong> - <span class="cor2">1</span>
+                <strong>valorB</strong> &#60;- <strong>valorB</strong> - <span class="cor2">1</span>
+                <span class="cor1">retorne</span> <strong>testar</strong>(<strong>valorA</strong>, <strong>valorB</strong>)
+            <span class="cor1">fimse</span>
+        <span class="cor1">fimse</span>
+    <span class="cor1">fimfuncao</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor de A: "</span>)
+    <span class="cor1">leia</span>(<strong>a</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor de B: "</span>)
+    <span class="cor1">leia</span>(<strong>b</strong>)
+    <span class="cor1">escreva</span>(<strong>testar</strong>(<strong>a</strong>, <strong>b</strong>))
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio4.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio4.alg</span></a></p>
+            <hr>
+            <p>5. Determinar se um número é par ou ímpar e positivo ou negativo.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio5"</span>
+    <span class="cor1">var</span> <strong>numero</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite um numero: "</span>)
+    <span class="cor1">leia</span>(<strong>numero</strong>)
+    <span class="cor1">se</span> <strong>numero</strong> &#62;= <span class="cor2">0</span> <span class="cor1">entao</span>
+        <span class="cor1">se</span> <strong>numero</strong> % <span class="cor2">2</span> = <span class="cor2">0</span> <span class="cor1">entao</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"positivo e par"</span>)
+        <span class="cor1">senao</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"positivo e impar"</span>)
+        <span class="cor1">fimse</span>
+    <span class="cor1">senao</span>
+        <span class="cor1">se</span> <strong>numero</strong> % <span class="cor2">2</span> = <span class="cor2">0</span> <span class="cor1">entao</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"negativo e par"</span>)
+        <span class="cor1">senao</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"negativo e impar"</span>)
+        <span class="cor1">fimse</span>
+    <span class="cor1">fimse</span>
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio5.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio5.alg</span></a></p>
+            <hr>
+            <p>6. Faça um algoritmo que calcule a soma dos números inteiros de 1 a 100.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio6"</span>
+    <span class="cor1">var</span> <strong>i</strong>, <strong>soma</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">para</span> <strong>i</strong> de <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">100</span> <span class="cor1">faca</span>
+        <strong>soma</strong> &#60;- <strong>soma</strong> + <strong>i</strong>
+    <span class="cor1">fimpara</span>
+    <span class="cor1">escreva</span>(<strong>soma</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio6.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio6.alg</span></a></p>
+            <hr>
+            <p>7. Faça um algoritmo que lê uma temperatura em Fahrenheit e calcula a temperatura correspondente em Celsius. Ao final o programa deve exibir as duas temperaturas (formatadas com até 2 casas decimais). Usar a fórmula C = (5 * (F-32) / 9).</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio7"</span>
+    <span class="cor1">var</span> <strong>tempFahrenheit</strong>, <strong>tempCelsius</strong>: <span class="cor3">real</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a temperatura em Fahrenheit: "</span>)
+    <span class="cor1">leia</span>(<strong>tempFahrenheit</strong>)
+    <strong>tempCelsius</strong> &#60;- (<span class="cor2">5</span> * (<strong>tempFahrenheit</strong> - <span class="cor2">32</span>) / <span class="cor2">9</span>)
+    <span class="cor1">escreval</span>(<strong>tempFahrenheit</strong>:<span class="cor2">2</span>,<span class="cor2">"º F"</span>)
+    <span class="cor1">escreval</span>(<strong>tempCelsius</strong>:<span class="cor2">2</span>,<span class="cor2">"º C"</span>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio7.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio7.alg</span></a></p>
+            <hr>
+            <p>8. Numa eleição existem três candidatos identificados pelos números 1, 2 e 3. Faça um algoritmo que compute o resultado de uma eleição. Inicialmente o programa deve pedir o número total de votantes. Em seguida, deve pedir para cada votante votar (informando o numero do candidato) e ao final mostrar o número de votos de cada candidato.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio8"</span>
+    <span class="cor1">var</span> <strong>c1</strong>, <strong>c2</strong>, <strong>c3</strong>, <strong>qtdeVotantes</strong>, <strong>i</strong>, <strong>voto</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o total de votantes: "</span>)
+    <span class="cor1">leia</span>(<strong>qtdeVotantes</strong>)
+    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <strong>qtdeVotantes</strong> <span class="cor1">faca</span>
+        <span class="cor1">escreva</span>(<span class="cor2">"Digite seu voto (1 | 2 | 3): "</span>)
+        <span class="cor1">leia</span>(<strong>voto</strong>)
+        <span class="cor1">enquanto</span> (<strong>voto</strong> &#60;&#62; <span class="cor2">1</span>) <span class="cor1">e</span> (<strong>voto</strong> &#60;&#62; <span class="cor2">2</span>) <span class="cor1">e</span> (<strong>voto</strong> &#60;&#62; <span class="cor2">3</span>) <span class="cor1">faca</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"Candidato inexistente! Tente novamente (1 | 2 | 3)"</span>)
+            <span class="cor1">leia</span>(<strong>voto</strong>)
+        <span class="cor1">fimenquanto</span>
+        <span class="cor1">se</span> <strong>voto</strong> = <span class="cor2">1</span> <span class="cor1">entao</span>
+            <strong>c1</strong> &#60;- <strong>c1</strong> + <span class="cor2">1</span>
+        <span class="cor1">senao</span>
+            <span class="cor1">se</span> <strong>voto</strong> = <span class="cor2">2</span> <span class="cor1">entao</span>
+                <strong>c2</strong> &#60;- <strong>c2</strong> + <span class="cor2">1</span>
+            <span class="cor1">senao</span>
+                <span class="cor1">se</span> <strong>voto</strong> = <span class="cor2">3</span> <span class="cor1">entao</span>
+                    <strong>c3</strong> &#60;- <strong>c3</strong> + <span class="cor2">1</span>
+                <span class="cor1">fimse</span>
+            <span class="cor1">fimse</span>
+        <span class="cor1">fimse</span>
+    <span class="cor1">fimpara</span>
+    <span class="cor1">escreval</span>(<span class="cor2">"Votos C1: "</span>,<strong>c1</strong>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Votos C2: "</span>,<strong>c2</strong>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Votos C3: "</span>,<strong>c3</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio8.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio8.alg</span></a></p>
+            <hr>
+            <p>9. Anacleto tem 1.50m e cresce 2cm por ano, enquanto Felisberto tem 1.10m e cresce 3cm por ano. Construa um programa que calcule e apresente quantos anos serão necessários para que Felisberto seja maior que Anacleto.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio9"</span>
+    <span class="cor1">var</span> <strong>alturaAnacleto</strong>, <strong>alturaFelisberto</strong>: <span class="cor3">real</span>
+    <strong>i</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <strong>alturaAnacleto</strong> &#60;- <span class="cor2">1.50</span>
+    <strong>alturaFelisberto</strong> &#60;- <span class="cor2">1.10</span>
+    <strong>i</strong> &#60;- <span class="cor2">0</span>
+    <span class="cor1">repita</span>
+        <strong>i</strong> &#60;- <strong>i</strong> + <span class="cor2">1</span>
+        <strong>alturaAnacleto</strong> &#60;- <strong>alturaAnacleto</strong> + <span class="cor2">0.02</span>
+        <strong>alturaFelisberto</strong> &#60;- <strong>alturaFelisberto</strong> + <span class="cor2">0.03</span>
+    <span class="cor1">ate</span> <strong>alturaFelisberto</strong> &#62; <strong>alturaAnacleto</strong>
+    <span class="cor1">escreva</span>(<span class="cor2">"Quantidade de anos: "</span>,<strong>i</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio9.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio9.alg</span></a></p>
+            <hr>
+            <p>10. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa apenas em dias.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio10"</span>
+    <span class="cor1">var</span> <strong>ano</strong>, <strong>mes</strong>, <strong>dia</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a idade em anos: "</span>)
+    <span class="cor1">leia</span>(<strong>ano</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a idade em meses: "</span>)
+    <span class="cor1">leia</span>(<strong>mes</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a idade em dias: "</span>)
+    <span class="cor1">leia</span>(<strong>dia</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Idade em dias: "</span>, <strong>ano</strong> * <span class="cor2">365</span> + <strong>mes</strong> * <span class="cor2">30</span> + <strong>dia</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio10.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio10.alg</span></a></p>
+            <hr>
+            <p>11. Elabore um algoritmo que dada a idade de um nadador classifica-o em uma das seguintes categorias:</p>
+            <ul>
+                <li>infantil A = 5 - 7 anos</li>
+                <li>infantil B = 8 - 10 anos</li>
+                <li>juvenil A = 11 - 13 anos</li>
+                <li>juvenil B = 14 - 17 anos</li>
+                <li>adulto = maiores de 18 anos</li>	
+            </ul>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio11"</span>
+    <span class="cor1">var</span> <strong>idade</strong>: <span class="cor3">inteiro</span>
+    <strong>categoria</strong>: <span class="cor3">caractere</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a idade: "</span>)
+    <span class="cor1">leia</span>(<strong>idade</strong>)
+    <span class="cor1">se</span> (<strong>idade</strong> &#62;= <span class="cor2">5</span>) <span class="cor1">e</span> (<strong>idade</strong> &#60;= <span class="cor2">7</span>) <span class="cor1">entao</span>
+        <strong>categoria</strong> &#60;- <span class="cor2">"infantil A"</span>
+    <span class="cor1">senao</span>
+        <span class="cor1">se</span> (<strong>idade</strong> &#62;= <span class="cor2">8</span>) <span class="cor1">e</span> (<strong>idade</strong> &#60;= <span class="cor2">10</span>) <span class="cor1">entao</span>
+            <strong>categoria</strong> &#60;- <span class="cor2">"infantil B"</span>
+        <span class="cor1">senao</span>
+            <span class="cor1">se</span> (<strong>idade</strong> &#62;= <span class="cor2">11</span>) <span class="cor1">e</span> (<strong>idade</strong> &#60;= <span class="cor2">13</span>) <span class="cor1">entao</span>
+                <strong>categoria</strong> &#60;- <span class="cor2">"juvenil A"</span>
+            <span class="cor1">senao</span>
+                <span class="cor1">se</span> (<strong>idade</strong> &#62;= <span class="cor2">14</span>) <span class="cor1">e</span> (<strong>idade</strong> &#60;= <span class="cor2">17</span>) <span class="cor1">entao</span>
+                    <strong>categoria</strong> &#60;- <span class="cor2">"juvenil B"</span>
+                <span class="cor1">senao</span>
+                    <span class="cor1">se</span> (<strong>idade</strong> &#62;= <span class="cor2">18</span>) <span class="cor1">entao</span>
+                      <strong>categoria</strong> &#60;- <span class="cor2">"adulto"</span>
+                    <span class="cor1">senao</span>
+                        <strong>categoria</strong> &#60;- <span class="cor2">"não definida"</span>
+                    <span class="cor1">fimse</span>
+                <span class="cor1">fimse</span>
+            <span class="cor1">fimse</span>
+        <span class="cor1">fimse</span>
+    <span class="cor1">fimse</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Categoria: "</span>,<strong>categoria</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio11.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio11.alg</span></a></p>
+            <hr>	
+            <p>12. Tendo como dados de entrada a altura e o sexo de uma pessoa (masculino (M) e (F) feminino), construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:</p>
+            <ul>
+                <li>para homens: (72.7 * h) - 58</li>
+                <li>para mulheres: (62.1 * h) - 44.7</li>
+            </ul>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio12"</span>
+    <span class="cor1">var</span> <strong>h</strong>: <span class="cor3">real</span>
+    <strong>sexo</strong>: <span class="cor3">caractere</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o sexo (m | f): "</span>)
+    <span class="cor1">leia</span>(<strong>sexo</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a altura: "</span>)
+    <span class="cor1">leia</span>(<strong>h</strong>)
+    <span class="cor1">se</span> (<strong>sexo</strong> = <span class="cor2">"m"</span>) <span class="cor1">ou</span> (<strong>sexo</strong> = <span class="cor2">"M"</span>) <span class="cor1">entao</span>
+        <span class="cor1">escreva</span>(<span class="cor2">"Peso ideal: "</span>,<span class="cor2">72.7</span> * <strong>h</strong> - <span class="cor2">58</span>)
+    <span class="cor1">senao</span>
+        <span class="cor1">se</span> (<strong>sexo</strong> = <span class="cor2">"f"</span>) <span class="cor1">ou</span> (<strong>sexo</strong> = <span class="cor2">"F"</span>) <span class="cor1">entao</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"Peso ideal: "</span>,<span class="cor2">62.1</span> * <strong>h</strong> - <span class="cor2">44.7</span>)
+        <span class="cor1">fimse</span>
+    <span class="cor1">fimse</span>
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio12.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio12.alg</span></a></p>
+            <hr>	
+            <p>13. Um vendedor necessita de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a tabela abaixo. Se o código digitado não existir, peça ao usuário que entre com um código válido.</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr><th>Código do produto</th><th>Preço por unidade</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1001</td><td>R$ 5,32</td></tr>
+                    <tr><td>1324</td><td>R$ 6,45</td></tr>
+                    <tr><td>6548</td><td>R$ 2,37</td></tr>
+                    <tr><td>0987</td><td>R$ 5,32</td></tr>
+                    <tr><td>7623</td><td>R$ 6,45</td></tr>
+                </tbody>
+            </table>	
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio13"</span>
+    <span class="cor1">var</span> <strong>codigoProduto</strong>, <strong>quantidade</strong>: <span class="cor3">inteiro</span>
+    <strong>precoUnidade</strong>, <strong>precoTotal</strong>: <span class="cor3">real</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o código do produto: "</span>)
+    <span class="cor1">leia</span>(<strong>codigoProduto</strong>)
+    <span class="cor1">enquanto</span> (<strong>codigoProduto</strong> &#60;&#62; <span class="cor2">1001</span>) <span class="cor1">e</span> (<strong>codigoProduto</strong> &#60;&#62; <span class="cor2">1324</span>) <span class="cor1">e</span> (<strong>codigoProduto</strong> &#60;&#62; <span class="cor2">6548</span>) <span class="cor1">e</span> (<strong>codigoProduto</strong> &#60;&#62; <span class="cor2">0987</span>) <span class="cor1">e</span> (<strong>codigoProduto</strong> &#60;&#62; <span class="cor2">7623</span>) <span class="cor1">faca</span>
+        <span class="cor1">escreva</span>(<span class="cor2">"Código inválido! Tente novamente (1001 | 1324 | 6548 | 0987 | 7623): "</span>)
+        <span class="cor1">leia</span>(<strong>codigoProduto</strong>)
+    <span class="cor1">fimenquanto</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a quantidade: "</span>)
+    <span class="cor1">leia</span>(<strong>quantidade</strong>)
+    <span class="cor1">escolha</span> <strong>codigoProduto</strong>
+        <span class="cor1">caso</span> <span class="cor2">1001</span>
+            <strong>precoUnidade</strong> &#60;- <span class="cor2">5.32</span>
+        <span class="cor1">caso</span> <span class="cor2">1324</span>
+            <strong>precoUnidade</strong> &#60;- <span class="cor2">6.45</span>
+        <span class="cor1">caso</span> <span class="cor2">6548</span>
+            <strong>precoUnidade</strong> &#60;- <span class="cor2">2.37</span>
+        <span class="cor1">caso</span> <span class="cor2">0987</span>
+            <strong>precoUnidade</strong> &#60;- <span class="cor2">5.32</span>
+        <span class="cor1">caso</span> <span class="cor2">7623</span>
+            <strong>precoUnidade</strong> &#60;- <span class="cor2">6.45</span>
+    <span class="cor1">fimescolha</span>
+    <strong>precoTotal</strong> &#60;- <strong>quantidade</strong> * <strong>precoUnidade</strong>
+    <span class="cor1">escreva</span>(<span class="cor2">"Preço total: "</span>,<strong>precoTotal</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio13.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio13.alg</span></a></p>
+            <hr>	
+            <p>14. Uma empresa concederá um aumento de salário aos seus funcionários, variável de acordo com o cargo, conforme a tabela abaixo. Faça um algoritmo que leia o salário e o cargo de um funcionário (por meio do código) e calcule o novo salário. Se o cargo do funcionário não estiver na tabela, ele deverá, então, receber 40% de aumento. Mostre o salário antigo, o novo salário e a diferença.</p>
+            <div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr><th>Código</th><th>Cargo</th><th>Percentual</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>101</td><td>Gerente</td><td>10%</td></tr>
+                        <tr><td>102</td><td>Engenheiro</td><td>20%</td></tr>
+                        <tr><td>103</td><td>Técnico</td><td>30%</td></tr>
+                    </tbody>
+                </table>	
+            </div>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio14"</span>
+    <span class="cor1">var</span> <strong>salario</strong>, <strong>novoSalario</strong>, <strong>diferenca</strong>: <span class="cor3">real</span>
+    <strong>codigoCargo</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o salário: "</span>)
+    <span class="cor1">leia</span>(<strong>salario</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o código do cargo: "</span>)
+    <span class="cor1">leia</span>(<strong>codigoCargo</strong>)
+    <span class="cor1">escolha</span> <strong>codigoCargo</strong>
+        <span class="cor1">caso</span> <span class="cor2">101</span>
+            <strong>novoSalario</strong> &#60;- <strong>salario</strong> + <strong>salario</strong> * <span class="cor2">10</span> / <span class="cor2">100</span>
+        <span class="cor1">caso</span> <span class="cor2">102</span>
+            <strong>novoSalario</strong> &#60;- <strong>salario</strong> + <strong>salario</strong> * <span class="cor2">20</span> / <span class="cor2">100</span>
+        <span class="cor1">caso</span> <span class="cor2">103</span>
+            <strong>novoSalario</strong> &#60;- <strong>salario</strong> + <strong>salario</strong> * <span class="cor2">30</span> / <span class="cor2">100</span>
+        <span class="cor1">outrocaso</span>
+            <strong>novoSalario</strong> &#60;- <strong>salario</strong> + <strong>salario</strong> * <span class="cor2">40</span> / <span class="cor2">100</span>
+    <span class="cor1">fimescolha</span>
+    <strong>diferenca</strong> &#60;- <strong>novoSalario</strong> - <strong>salario</strong>
+    <span class="cor1">escreval</span>(<span class="cor2">"Salário antigo: "</span>,<strong>salario</strong>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Novo salário: "</span>,<strong>novoSalario</strong>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Diferença: "</span>,<strong>diferenca</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio14.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio14.alg</span></a></p>
+            <hr>	
+            <p>15. Escrever um algoritmo que lê um conjunto de 4 valores i, a, b, c, onde i é um valor inteiro e positivo e a, b, c, são quaisquer valores reais e os escreva. A seguir:</p>
+            <ul>
+                <li>Se i = 1 escrever os três valores a, b, c em ordem crescente.</li>
+                <li>Se i = 2 escrever os três valores a, b, c em ordem decrescente.</li>
+                <li>Se i = 3 escrever os três valores a, b, c de forma que o maior entre a, b, c fique dentre os dois.</li>
+            </ul>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio15"</span>
+    <span class="cor1">var</span> <strong>i</strong>: <span class="cor3">inteiro</span>
+    <strong>a</strong>, <strong>b</strong>, <strong>c</strong>, <strong>menor</strong>, <strong>medio</strong>, <strong>maior</strong>: <span class="cor3">real</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor de i (1 | 2 | 3): "</span>)
+    <span class="cor1">leia</span>(<strong>i</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor de a: "</span>)
+    <span class="cor1">leia</span>(<strong>a</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor de b: "</span>)
+    <span class="cor1">leia</span>(<strong>b</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor de c: "</span>)
+    <span class="cor1">leia</span>(<strong>c</strong>)
+    <span class="cor1">se</span> (<strong>a</strong> &#62; <strong>b</strong>) <span class="cor1">e</span> (<strong>a</strong> &#62; <strong>c</strong>) <span class="cor1">entao</span>
+        <span class="cor1">se</span> <strong>b</strong> &#62; <strong>c</strong> <span class="cor1">entao</span>
+            <strong>maior</strong> &#60;- <strong>a</strong>
+            <strong>medio</strong> &#60;- <strong>b</strong>
+            <strong>menor</strong> &#60;- <strong>c</strong>
+        <span class="cor1">senao</span>
+            <strong>maior</strong> &#60;- <strong>a</strong>
+            <strong>medio</strong> &#60;- <strong>c</strong>
+            <strong>menor</strong> &#60;- <strong>b</strong>
+        <span class="cor1">fimse</span>
+    <span class="cor1">senao</span>
+        <span class="cor1">se</span> (<strong>b</strong> &#62; <strong>a</strong>) <span class="cor1">e</span> (<strong>b</strong> &#62; <strong>c</strong>) <span class="cor1">entao</span>
+            <span class="cor1">se</span> <strong>a</strong> &#62; <strong>c</strong> <span class="cor1">entao</span>
+                <strong>maior</strong> &#60;- <strong>b</strong>
+                <strong>medio</strong> &#60;- <strong>a</strong>
+                <strong>menor</strong> &#60;- <strong>c</strong>
+            <span class="cor1">senao</span>
+                <strong>maior</strong> &#60;- <strong>b</strong>
+                <strong>medio</strong> &#60;- <strong>c</strong>
+                <strong>menor</strong> &#60;- <strong>a</strong>
+            <span class="cor1">fimse</span>
+        <span class="cor1">senao</span>
+            <span class="cor1">se</span> (<strong>c</strong> &#62; <strong>a</strong>) <span class="cor1">e</span> (<strong>c</strong> &#62; <strong>b</strong>) <span class="cor1">entao</span>
+                <span class="cor1">se</span> <strong>a</strong> &#62; <strong>b</strong> <span class="cor1">entao</span>
+                    <strong>maior</strong> &#60;- <strong>c</strong>
+                    <strong>medio</strong> &#60;- <strong>a</strong>
+                    <strong>menor</strong> &#60;- <strong>b</strong>
+                <span class="cor1">senao</span>
+                    <strong>maior</strong> &#60;- <strong>c</strong>
+                    <strong>medio</strong> &#60;- <strong>b</strong>
+                    <strong>menor</strong> &#60;- <strong>a</strong>
+                <span class="cor1">fimse</span>
+            <span class="cor1">fimse</span>
+        <span class="cor1">fimse</span>
+    <span class="cor1">fimse</span>
+    <span class="cor1">escolha</span> <strong>i</strong>
+        <span class="cor1">caso</span> <span class="cor2">1</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"Os números em ordem crescente: "</span>,<strong>menor</strong>,<strong>medio</strong>,<strong>maior</strong>)
+        <span class="cor1">caso</span> <span class="cor2">2</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"Os números em ordem decrescente: "</span>,<strong>maior</strong>,<strong>medio</strong>,<strong>menor</strong>)
+        <span class="cor1">caso</span> <span class="cor2">3</span>
+            <span class="cor1">escreva</span>(<span class="cor2">"O maior entre os outros dois: "</span>,<strong>menor</strong>,<strong>maior</strong>,<strong>medio</strong>,<span class="cor2">" ou "</span>,<strong>medio</strong>,<strong>maior</strong>,<strong>menor</strong>)
+    <span class="cor1">fimescolha</span>
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio15.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio15.alg</span></a></p>
+            <hr>	
+            <p>16. A padaria Hotpão vende uma certa quantidade de pães franceses e uma quantidade de broas a cada dia. Cada pãozinho custa R$ 0,12 e a broa custa R$ 1,50. Ao final do dia, o dono quer saber quanto arrecadou com a venda dos pães e broas (juntos), e quanto deve guardar numa conta de poupança (10% do total arrecadado). Você foi contratado para fazer os cálculos para o dono. Com base nestes fatos, faça um algoritmo para ler as quantidades de pães e de broas, e depois calcular os dados solicitados.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio16"</span>
+    <span class="cor1">var</span> <strong>quantidadePao</strong>, <strong>quantidadeBroa</strong>: <span class="cor3">inteiro</span>
+    <strong>total</strong>, <strong>totalPoupanca</strong>: <span class="cor3">real</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a quantidade de pães: "</span>)
+    <span class="cor1">leia</span>(<strong>quantidadePao</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a quantidade de broas: "</span>)
+    <span class="cor1">leia</span>(<strong>quantidadeBroa</strong>)
+    <strong>total</strong> &#60;- <strong>quantidadePao</strong> * <span class="cor2">0.12</span> + <strong>quantidadeBroa</strong> * <span class="cor2">1.50</span>
+    <strong>totalPoupanca</strong> &#60;- <strong>total</strong> * <span class="cor2">10</span> / <span class="cor2">100</span>
+    <span class="cor1">escreval</span>(<span class="cor2">"Valor arrecadado: R$"</span>,<strong>total</strong>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Valor para poupança: R$"</span>,<strong>totalPoupanca</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio16.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio16.alg</span></a></p>
+            <hr>	
+            <p>17. Faça um algoritmo para ler o salário de um funcionário e aumentá-Io em 15%. Após o aumento, desconte 8% de impostos. Imprima o salário inicial, o salário com o aumento e o salário final.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio17"</span>
+    <span class="cor1">var</span> <strong>salarioInicial</strong>, <strong>salarioAumento</strong>, <strong>salarioFinal</strong>: <span class="cor3">real</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o salário: "</span>)
+    <span class="cor1">leia</span>(<strong>salarioInicial</strong>)
+    <strong>salarioAumento</strong> &#60;- <strong>salarioInicial</strong> + <strong>salarioInicial</strong> * <span class="cor2">0.15</span>
+    <strong>salarioFinal</strong> &#60;- <strong>salarioAumento</strong> - <strong>salarioAumento</strong> * <span class="cor2">0.08</span>
+    <span class="cor1">escreval</span>(<span class="cor2">"Salário inicial: "</span>,<strong>salarioInicial</strong>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Salário com aumento: "</span>,<strong>salarioAumento</strong>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Salário final: "</span>,<strong>salarioFinal</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio17.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio17.alg</span></a></p>
+            <hr>	
+            <p>18. Escreva um programa que leia uma lista contendo o peso de uma série de indivíduos em um vetor de números reais. A lista possui 150 elementos. Depois que a lista foi toda inserida o programa deve procurar e imprimir qual a posição no vetor onde está o menor peso.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio18"</span>
+    <span class="cor1">var</span> <strong>vet</strong>: <span class="cor3">vetor</span> [<span class="cor2">1..150</span>] <span class="cor1">de</span> <span class="cor3">real</span>
+    <strong>peso</strong>: <span class="cor3">real</span>
+    <strong>i</strong>, <strong>posicao</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">150</span> <span class="cor1">faca</span>
+        <span class="cor1">escreva</span>(<span class="cor2">"Digite o peso: "</span>)
+        <span class="cor1">leia</span>(<strong>peso</strong>)
+        <strong>vet</strong>[<strong>i</strong>] &#60;- <strong>peso</strong>
+    <span class="cor1">fimpara</span>
+    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">150</span> <span class="cor1">faca</span>
+        <span class="cor1">se</span> <strong>vet</strong>[<strong>i</strong>] &#60; <strong>peso</strong> <span class="cor1">entao</span>
+            <strong>peso</strong> &#60;- <strong>vet</strong>[<strong>i</strong>]
+            <strong>posicao</strong> &#60;- <strong>i</strong>
+        <span class="cor1">fimse</span>
+    <span class="cor1">fimpara</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Na posição "</span>,<strong>posicao</strong>,<span class="cor2">" está o menor peso, que é "</span>,<strong>peso</strong>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio18.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio18.alg</span></a></p>
+            <hr>	
+            <p>19. A fábrica de refrigerantes Meia-Cola vende seu produto em três formatos: lata de 350 ml, garrafa de 600 ml e garrafa de 2 litros. Se um comerciante compra uma determinada quantidade de cada formato, faça um algoritmo para calcular quantos litros de refrigerante ele comprou.</p>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio19"</span>
+    <span class="cor1">var</span> <strong>quantidadeF1</strong>, <strong>quantidadeF2</strong>, <strong>quantidadeF3</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a quantidade de latas (350ml): "</span>)
+    <span class="cor1">leia</span>(<strong>quantidadeF1</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a quantidade de garrafas (600ml): "</span>)
+    <span class="cor1">leia</span>(<strong>quantidadeF2</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite a quantidade de garrafas (2l): "</span>)
+    <span class="cor1">leia</span>(<strong>quantidadeF3</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Quantidade em litros: "</span>,<strong>quantidadeF1</strong> * <span class="cor2">0.350</span> + <strong>quantidadeF2</strong> * <span class="cor2">0.600</span> + <strong>quantidadeF3</strong> * <span class="cor2">2</span>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio19.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio19.alg</span></a></p>
+            <hr>	
+            <p>20. Faça um algoritmo que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:</p>
+            <ul>
+                <li>a idade dessa pessoa em anos;</li>
+                <li>a idade dessa pessoa em meses;</li>
+                <li>a idade dessa pessoa em semanas;</li>
+                <li>a idade dessa pessoa em dias.</li>
+            </ul>
+            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio20"</span>
+    <span class="cor1">var</span> <strong>anoNascimento</strong>, <strong>anoAtual</strong>, <strong>idadeAno</strong>: <span class="cor3">inteiro</span>
+<span class="cor1">inicio</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o ano de nascimento: "</span>)
+    <span class="cor1">leia</span>(<strong>anoNascimento</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o ano atual: "</span>)
+    <span class="cor1">leia</span>(<strong>anoAtual</strong>)
+    <span class="cor1">enquanto</span> <strong>anoAtual</strong> &#60;= <strong>anoNascimento</strong> <span class="cor1">faca</span>
+        <span class="cor1">escreva</span>(<span class="cor2">"O ano atual não pode ser inferior ou igual ao ano de nascimento! Tente novamente: "</span>)
+        <span class="cor1">leia</span>(<strong>anoAtual</strong>)
+    <span class="cor1">fimenquanto</span>
+    <strong>idadeAno</strong> &#60;- <strong>anoAtual</strong> - <strong>anoNascimento</strong>
+    <span class="cor1">escreval</span>(<span class="cor2">"Idade em anos: "</span>, <strong>idadeAno</strong>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Idade em meses: "</span>, <strong>idadeAno</strong> * <span class="cor2">12</span>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Idade em semanas: "</span>, <strong>idadeAno</strong> * <span class="cor2">52</span>)
+    <span class="cor1">escreval</span>(<span class="cor2">"Idade em dias: "</span>, <strong>idadeAno</strong> * <span class="cor2">365</span>)
+<span class="cor1">fimalgoritmo</span></code></pre>
+            <p><a href="assets/exercises/visualg/Exercicio20.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio20.alg</span></a></p>
+        </div>
+    </body>
+</html>
