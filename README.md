@@ -27,24 +27,24 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
 10. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa apenas em dias.
 
 11. Elabore um algoritmo que dada a idade de um nadador classifica-o em uma das seguintes categorias:
-  - infantil A = 5 - 7 anos
-  - infantil B = 8 - 10 anos
-  - juvenil A = 11 - 13 anos
-  - juvenil B = 14 - 17 anos
-  - adulto = maiores de 18 anos
+    - infantil A = 5 - 7 anos
+    - infantil B = 8 - 10 anos
+    - juvenil A = 11 - 13 anos
+    - juvenil B = 14 - 17 anos
+    - adulto = maiores de 18 anos
 
 12. Tendo como dados de entrada a altura e o sexo de uma pessoa (masculino (M) e (F) feminino), construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
-  - para homens: (72.7 * h) - 58
-  - para mulheres: (62.1 * h) - 44.7
+    - para homens: (72.7 * h) - 58
+    - para mulheres: (62.1 * h) - 44.7
 
 13. Um vendedor necessita de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a tabela abaixo. Se o código digitado não existir, peça ao usuário que entre com um código válido.
 
 14. Uma empresa concederá um aumento de salário aos seus funcionários, variável de acordo com o cargo, conforme a tabela abaixo. Faça um algoritmo que leia o salário e o cargo de um funcionário (por meio do código) e calcule o novo salário. Se o cargo do funcionário não estiver na tabela, ele deverá, então, receber 40% de aumento. Mostre o salário antigo, o novo salário e a diferença.
 
 15. Escrever um algoritmo que lê um conjunto de 4 valores i, a, b, c, onde i é um valor inteiro e positivo e a, b, c, são quaisquer valores reais e os escreva. A seguir:
-  - Se i = 1 escrever os três valores a, b, c em ordem crescente.
-  - Se i = 2 escrever os três valores a, b, c em ordem decrescente.
-  - Se i = 3 escrever os três valores a, b, c de forma que o maior entre a, b, c fique dentre os dois.
+    - Se i = 1 escrever os três valores a, b, c em ordem crescente.
+    - Se i = 2 escrever os três valores a, b, c em ordem decrescente.
+    - Se i = 3 escrever os três valores a, b, c de forma que o maior entre a, b, c fique dentre os dois.
 
 16. A padaria Hotpão vende uma certa quantidade de pães franceses e uma quantidade de broas a cada dia. Cada pãozinho custa R$ 0,12 e a broa custa R$ 1,50. Ao final do dia, o dono quer saber quanto arrecadou com a venda dos pães e broas (juntos), e quanto deve guardar numa conta de poupança (10% do total arrecadado). Você foi contratado para fazer os cálculos para o dono. Com base nestes fatos, faça um algoritmo para ler as quantidades de pães e de broas, e depois calcular os dados solicitados.
 
@@ -55,10 +55,10 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
 19. A fábrica de refrigerantes Meia-Cola vende seu produto em três formatos: lata de 350 ml, garrafa de 600 ml e garrafa de 2 litros. Se um comerciante compra uma determinada quantidade de cada formato, faça um algoritmo para calcular quantos litros de refrigerante ele comprou.
 
 20. Faça um algoritmo que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:
-  - a idade dessa pessoa em anos;
-  - a idade dessa pessoa em meses;
-  - a idade dessa pessoa em semanas;
-  - a idade dessa pessoa em dias.
+    - a idade dessa pessoa em anos;
+    - a idade dessa pessoa em meses;
+    - a idade dessa pessoa em semanas;
+    - a idade dessa pessoa em dias.
 
 Esta atividade não é pontuada, no entanto, muito importante para o desenvolvimento do conhecimento sobre o assunto.
 
