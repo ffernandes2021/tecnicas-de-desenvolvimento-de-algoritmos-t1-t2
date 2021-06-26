@@ -66,7 +66,7 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
 
 18. Escreva um programa que leia uma lista contendo o peso de uma série de indivíduos em um vetor de números reais. A lista possui 150 elementos. Depois que a lista foi toda inserida o programa deve procurar e imprimir qual a posição no vetor onde está o menor peso.
 
-19. A fábrica de refrigerantes Meia-Cola vende seu produto em três formatos: lata de 350 ml, garrafa de 600 ml e garrafa de 2 litros. Se um comerciante compra uma determinada quantidade de cada formato, faça um algoritmo para calcular quantos litros de refrigerante ele comprou.
+19. A fábrica de refrigerantes Meia-Cola vende seu produto em 3 formatos: lata de 350 ml, garrafa de 600 ml e garrafa de 2 litros. Se um comerciante compra uma determinada quantidade de cada formato, faça um algoritmo para calcular quantos litros de refrigerante ele comprou.
 
 20. Faça um algoritmo que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:
     - a idade dessa pessoa em anos;
