@@ -74,7 +74,7 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
     - a idade dessa pessoa em semanas;
     - a idade dessa pessoa em dias.
 
-Esta atividade não é pontuada, no entanto, muito importante para o desenvolvimento do conhecimento sobre o assunto.
+Esta atividade não é pontuada, no entanto, muito importante para o desenvolvimento de seu conhecimento sobre o assunto.
 
 Este fórum estará aberto, entre os dias: DD/MM à DD/MM.
 
