@@ -1,12 +1,12 @@
 algoritmo "Exercicio2"
 
-var numero, mes: inteiro
+var mes: inteiro
 
 inicio
    
    repita
    
-      escreva("Digite o mês [1 - 12] ou [0] para sair:")
+      escreva("Digite o mÃªs [1 - 12] ou [0] para sair:")
       leia(mes)
       
       se mes = 0 entao
@@ -18,7 +18,7 @@ inicio
             caso 2
                escreval("Fevereiro")
             caso 3
-               escreval("Março")
+               escreval("MarÃ§o")
             caso 4
                escreval("Abril")
             caso 5
@@ -38,7 +38,7 @@ inicio
             caso 12
                escreval("Dezembro")
             outrocaso
-               escreval("Mês invalido! Tente novamente")
+               escreval("MÃªs invÃ¡lido! Tente novamente")
          fimescolha
       fimse
    

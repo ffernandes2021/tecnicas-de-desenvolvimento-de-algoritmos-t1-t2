@@ -16,18 +16,17 @@
             </div>
             <p>1. Criem um programa que imprima a tabuada do número 9. Algo como 9x1 = 9, 9x2 = 18... imprima cada expressão em uma linha.</p>
             <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio1"</span>
-    <span class="cor1">var</span> <strong>i</strong>, <strong>resultado</strong>: <span class="cor3">inteiro</span>
+    <span class="cor1">var</span> <strong>i</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
-    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">10</span> <span class="cor1">faca</span>
-        <strong>resultado</strong> &#60;- <span class="cor2">9</span> * <strong>i</strong>
-        <span class="cor1">escreval</span>(<span class="cor2">"9 *"</span>,<strong>i</strong>,<span class="cor2">" ="</span>,<strong>resultado</strong>)
+    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">10</span> <span class="cor1">faca</span>        
+        <span class="cor1">escreval</span>(<span class="cor2">"9 *"</span>,<strong>i</strong>,<span class="cor2">" ="</span>,<span class="cor2">9</span> * <strong>i</strong>)
     <span class="cor1">fimpara</span>
 <span class="cor1">fimalgoritmo</span></code></pre>
             <p><a href="assets/exercises/visualg/Exercicio1.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio1.alg</span></a></p>
             <hr>
             <p>2. Criem um programa que ao usuário digitar um número, o programa exiba o mês correspondente. Utilizem ESCOLHA. Validem a entrada do usuário para números válidos (1-12). Valores fora deste intervalo, devem imprimir "Mês inválido! Tente novamente" e permitir que o usuário entre com um novo valor. O programa encerra digitando 0 (zero).</p>
             <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio2"</span>
-    <span class="cor1">var</span> <strong>numero</strong>, <strong>mes</strong>: <span class="cor3">inteiro</span>
+    <span class="cor1">var</span> <strong>mes</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">repita</span>
         <span class="cor1">escreva</span>(<span class="cor2">"Digite o mês [1 - 12] ou [0] para sair:"</span>)
@@ -129,19 +128,19 @@
             <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio5"</span>
     <span class="cor1">var</span> <strong>numero</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
-    <span class="cor1">escreva</span>(<span class="cor2">"Digite um numero: "</span>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite um número: "</span>)
     <span class="cor1">leia</span>(<strong>numero</strong>)
     <span class="cor1">se</span> <strong>numero</strong> &#62;= <span class="cor2">0</span> <span class="cor1">entao</span>
         <span class="cor1">se</span> <strong>numero</strong> % <span class="cor2">2</span> = <span class="cor2">0</span> <span class="cor1">entao</span>
             <span class="cor1">escreva</span>(<span class="cor2">"positivo e par"</span>)
         <span class="cor1">senao</span>
-            <span class="cor1">escreva</span>(<span class="cor2">"positivo e impar"</span>)
+            <span class="cor1">escreva</span>(<span class="cor2">"positivo e ímpar"</span>)
         <span class="cor1">fimse</span>
     <span class="cor1">senao</span>
         <span class="cor1">se</span> <strong>numero</strong> % <span class="cor2">2</span> = <span class="cor2">0</span> <span class="cor1">entao</span>
             <span class="cor1">escreva</span>(<span class="cor2">"negativo e par"</span>)
         <span class="cor1">senao</span>
-            <span class="cor1">escreva</span>(<span class="cor2">"negativo e impar"</span>)
+            <span class="cor1">escreva</span>(<span class="cor2">"negativo e ímpar"</span>)
         <span class="cor1">fimse</span>
     <span class="cor1">fimse</span>
 <span class="cor1">fimalgoritmo</span></code></pre>
@@ -180,7 +179,7 @@
         <span class="cor1">escreva</span>(<span class="cor2">"Digite seu voto (1 | 2 | 3): "</span>)
         <span class="cor1">leia</span>(<strong>voto</strong>)
         <span class="cor1">enquanto</span> (<strong>voto</strong> &#60;&#62; <span class="cor2">1</span>) <span class="cor1">e</span> (<strong>voto</strong> &#60;&#62; <span class="cor2">2</span>) <span class="cor1">e</span> (<strong>voto</strong> &#60;&#62; <span class="cor2">3</span>) <span class="cor1">faca</span>
-            <span class="cor1">escreva</span>(<span class="cor2">"Candidato inexistente! Tente novamente (1 | 2 | 3)"</span>)
+            <span class="cor1">escreva</span>(<span class="cor2">"Candidato inexistente! Tente novamente (1 | 2 | 3): "</span>)
             <span class="cor1">leia</span>(<strong>voto</strong>)
         <span class="cor1">fimenquanto</span>
         <span class="cor1">se</span> <strong>voto</strong> = <span class="cor2">1</span> <span class="cor1">entao</span>
@@ -189,9 +188,7 @@
             <span class="cor1">se</span> <strong>voto</strong> = <span class="cor2">2</span> <span class="cor1">entao</span>
                 <strong>c2</strong> &#60;- <strong>c2</strong> + <span class="cor2">1</span>
             <span class="cor1">senao</span>
-                <span class="cor1">se</span> <strong>voto</strong> = <span class="cor2">3</span> <span class="cor1">entao</span>
-                    <strong>c3</strong> &#60;- <strong>c3</strong> + <span class="cor2">1</span>
-                <span class="cor1">fimse</span>
+                <strong>c3</strong> &#60;- <strong>c3</strong> + <span class="cor2">1</span>                
             <span class="cor1">fimse</span>
         <span class="cor1">fimse</span>
     <span class="cor1">fimpara</span>

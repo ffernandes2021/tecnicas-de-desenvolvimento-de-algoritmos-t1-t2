@@ -22,10 +22,8 @@ inicio
       senao
          se voto = 2 entao
             c2 <- c2 + 1
-         senao
-            se voto = 3 entao
-               c3 <- c3 + 1
-            fimse
+         senao            
+            c3 <- c3 + 1            
          fimse
       fimse
 
