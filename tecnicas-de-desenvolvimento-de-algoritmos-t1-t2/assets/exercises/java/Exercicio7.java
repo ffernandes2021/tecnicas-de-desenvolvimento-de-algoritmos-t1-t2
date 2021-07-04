@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Exercicio7 {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         scanner.useLocale(Locale.US);
         System.out.print("Digite a temperatura em Fahrenheit: ");
