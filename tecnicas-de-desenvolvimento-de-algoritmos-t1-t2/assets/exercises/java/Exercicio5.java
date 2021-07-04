@@ -7,7 +7,6 @@ public class Exercicio5 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um número: ");
         int numero = scanner.nextInt();
-
         if (numero >= 0) {
             if (numero % 2 == 0) {
                 System.out.print("positivo e par");
@@ -21,6 +20,7 @@ public class Exercicio5 {
                 System.out.print("negativo e ímpar");
             }
         }
+
     }
 
 }

@@ -12,6 +12,7 @@ public class Exercicio7 {
         double tempCelsius = (5 * (tempFahrenheit - 32) / 9);
         System.out.printf(Locale.US, "%.2fº F %n", tempFahrenheit);
         System.out.printf(Locale.US, "%.2fº C %n", tempCelsius);
+    
     }
 
 }

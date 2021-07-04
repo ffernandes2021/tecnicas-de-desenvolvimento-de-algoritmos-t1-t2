@@ -318,15 +318,13 @@
     <span class="cor1">leia</span>(<strong>quantidade</strong>)
     <span class="cor1">escolha</span> <strong>codigoProduto</strong>
         <span class="cor1">caso</span> <span class="cor2">1001</span>
+        <span class="cor1">caso</span> <span class="cor2">0987</span>
             <strong>precoUnidade</strong> &#60;- <span class="cor2">5.32</span>
         <span class="cor1">caso</span> <span class="cor2">1324</span>
+        <span class="cor1">caso</span> <span class="cor2">7623</span>
             <strong>precoUnidade</strong> &#60;- <span class="cor2">6.45</span>
         <span class="cor1">caso</span> <span class="cor2">6548</span>
             <strong>precoUnidade</strong> &#60;- <span class="cor2">2.37</span>
-        <span class="cor1">caso</span> <span class="cor2">0987</span>
-            <strong>precoUnidade</strong> &#60;- <span class="cor2">5.32</span>
-        <span class="cor1">caso</span> <span class="cor2">7623</span>
-            <strong>precoUnidade</strong> &#60;- <span class="cor2">6.45</span>
     <span class="cor1">fimescolha</span>
     <strong>precoTotal</strong> &#60;- <strong>quantidade</strong> * <strong>precoUnidade</strong>
     <span class="cor1">escreva</span>(<span class="cor2">"Preço total: "</span>,<strong>precoTotal</strong>)
@@ -467,22 +465,23 @@
             <hr>	
             <p>18. Escreva um programa que leia uma lista contendo o peso de uma série de indivíduos em um vetor de números reais. A lista possui 150 elementos. Depois que a lista foi toda inserida o programa deve procurar e imprimir qual a posição no vetor onde está o menor peso.</p>
             <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio18"</span>
-    <span class="cor1">var</span> <strong>vet</strong>: <span class="cor3">vetor</span> [<span class="cor2">1..150</span>] <span class="cor1">de</span> <span class="cor3">real</span>
+    <span class="cor1">var</span> <strong>vet</strong>: <span class="cor3">vetor</span> [<span class="cor2">0..149</span>] <span class="cor1">de</span> <span class="cor3">real</span>
     <strong>peso</strong>: <span class="cor3">real</span>
     <strong>i</strong>, <strong>posicao</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
-    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">150</span> <span class="cor1">faca</span>
+    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">0</span> <span class="cor1">ate</span> <span class="cor2">149</span> <span class="cor1">faca</span>
         <span class="cor1">escreva</span>(<span class="cor2">"Digite o peso: "</span>)
         <span class="cor1">leia</span>(<strong>peso</strong>)
         <strong>vet</strong>[<strong>i</strong>] &#60;- <strong>peso</strong>
-    <span class="cor1">fimpara</span>
-    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">150</span> <span class="cor1">faca</span>
+    <span class="cor1">fimpara</span>    
+    <strong>peso</strong> &#60;- <strong>vet</strong>[<span class="cor2">0</span>]
+    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">0</span> <span class="cor1">ate</span> <span class="cor2">149</span> <span class="cor1">faca</span>
         <span class="cor1">se</span> <strong>vet</strong>[<strong>i</strong>] &#60; <strong>peso</strong> <span class="cor1">entao</span>
             <strong>peso</strong> &#60;- <strong>vet</strong>[<strong>i</strong>]
             <strong>posicao</strong> &#60;- <strong>i</strong>
         <span class="cor1">fimse</span>
     <span class="cor1">fimpara</span>
-    <span class="cor1">escreva</span>(<span class="cor2">"Na posição "</span>,<strong>posicao</strong>,<span class="cor2">" está o menor peso, que é "</span>,<strong>peso</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Na posição"</span>,<strong>posicao</strong>,<span class="cor2">" está o menor peso, que é"</span>,<strong>peso</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
             <p><a href="assets/exercises/visualg/Exercicio18.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio18.alg</span></a></p>
             <hr>	

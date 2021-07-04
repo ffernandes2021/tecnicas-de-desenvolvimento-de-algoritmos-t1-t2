@@ -6,7 +6,6 @@ public class Exercicio2 {
         
         Scanner scanner = new Scanner(System.in);
         int mes;
-
         do {            
             System.out.print("Digite o mês [1 - 12] ou [0] para sair: ");
             mes = scanner.nextInt();
@@ -55,7 +54,6 @@ public class Exercicio2 {
                         break;
                 }
             }
-
         } while (mes != 0);
 
     }

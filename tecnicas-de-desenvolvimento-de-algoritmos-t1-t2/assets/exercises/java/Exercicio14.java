@@ -6,16 +6,12 @@ public class Exercicio14 {
     public static void main(String[] args) {
 
         double novoSalario;        
-        
         Scanner scanner = new Scanner(System.in);
         scanner.useLocale(Locale.US);
-
         System.out.print("Digite o salário: ");
         double salario = scanner.nextDouble();
-
         System.out.print("Digite o código do cargo: ");
         int codigoCargo = scanner.nextInt();
-
         switch (codigoCargo) {
             case 101:
                 novoSalario = salario + salario * 10 / 100;
@@ -30,9 +26,7 @@ public class Exercicio14 {
                 novoSalario = salario + salario * 40 / 100;
                 break;
         }
-        
         double diferenca = novoSalario - salario;
-        
         System.out.println("Salário antigo: " + salario);
         System.out.println("Novo salário: " + novoSalario);
         System.out.println("Diferença: " + diferenca);
