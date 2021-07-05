@@ -17,6 +17,7 @@ algoritmo "Exercicio4"
                 retorne testar(valorA, valorB)
             fimse
         fimse
+        retorne 0
     fimfuncao
 inicio
     escreva("Digite o valor de A: ")

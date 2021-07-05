@@ -1,23 +1,16 @@
 algoritmo "Exercicio3"
-    var vet: vetor [1..100] de inteiro
-    i, numero, quantidade, cont: inteiro
+    var v1, v2: real
+    procedimento realizarOperacoesAritmeticas(valor1, valor2: real)
+    inicio
+        escreval("Adição:", valor1 + valor2)
+        escreval("Subtração:", valor1 - valor2)
+        escreval("Multiplicação:", valor1 * valor2)
+        escreval("Divisão:", valor1 / valor2)
+    fimprocedimento
 inicio
-    cont <- 0
-    numero <- 1
-    enquanto cont < 100 faca
-        quantidade <- 0
-        para i de 1 ate numero faca
-            se numero % i = 0 entao
-                quantidade <- quantidade + 1
-            fimse
-        fimpara
-        se quantidade = 2 entao
-            cont <- cont + 1
-            vet[cont] <- numero
-        fimse
-        numero <- numero + 1
-    fimenquanto
-    para i de 1 ate 100 faca
-        escreval(vet[i])
-    fimpara
+    escreva("Digite o valor 1: ")
+    leia(v1)
+    escreva("Digite o valor 2: ")
+    leia(v2)
+    realizarOperacoesAritmeticas(v1, v2)
 fimalgoritmo

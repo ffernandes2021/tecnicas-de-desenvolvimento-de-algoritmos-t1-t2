@@ -67,29 +67,22 @@
 <span class="cor1">fimalgoritmo</span></code></pre>
             <p><a href="assets/exercises/visualg/Exercicio2.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio2.alg</span></a></p>
             <hr>
-            <p>3. Criem um vetor de 100 posições que é preenchido apenas por números primos. Utilize uma estrutura de repetição para popular o vetor. Por fim, imprima os valores em tela.</p>
+            <p>3. Crie um procedimento que receba dois valores reais digitados pelo usuário e, com estes imprima o resultado das quatro operações aritméticas.</p>
             <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio3"</span>
-    <span class="cor1">var</span> <strong>vet</strong>: <span class="cor3">vetor</span> [<span class="cor2">1..100</span>] <span class="cor1">de</span> <span class="cor3">inteiro</span>
-    <strong>i</strong>, <strong>numero</strong>, <strong>quantidade</strong>, <strong>cont</strong>: <span class="cor3">inteiro</span>
+    <span class="cor1">var</span> <strong>v1</strong>, <strong>v2</strong>: <span class="cor3">real</span>
+    <span class="cor1">procedimento</span> <strong>realizarOperacoesAritmeticas</strong>(<strong>valor1</strong>, <strong>valor2</strong>: <span class="cor3">real</span>)
+    <span class="cor1">inicio</span>
+        <span class="cor1">escreval</span>(<span class="cor2">"Adição:"</span>, <strong>valor1</strong> + <strong>valor2</strong>)
+        <span class="cor1">escreval</span>(<span class="cor2">"Subtração:"</span>, <strong>valor1</strong> - <strong>valor2</strong>)
+        <span class="cor1">escreval</span>(<span class="cor2">"Multiplicação:"</span>, <strong>valor1</strong> * <strong>valor2</strong>)
+        <span class="cor1">escreval</span>(<span class="cor2">"Divisão:"</span>, <strong>valor1</strong> / <strong>valor2</strong>)
+    <span class="cor1">fimprocedimento</span>
 <span class="cor1">inicio</span>
-    <strong>cont</strong> &#60;- <span class="cor2">0</span>
-    <strong>numero</strong> &#60;- <span class="cor2">1</span>
-    <span class="cor1">enquanto</span> <strong>cont</strong> &#60; <span class="cor2">100</span> <span class="cor1">faca</span>
-        <strong>quantidade</strong> &#60;- <span class="cor2">0</span>
-        <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <strong>numero</strong> <span class="cor1">faca</span>
-            <span class="cor1">se</span> <strong>numero</strong> % <strong>i</strong> = <span class="cor2">0</span> <span class="cor1">entao</span>
-                <strong>quantidade</strong> &#60;- <strong>quantidade</strong> + <span class="cor2">1</span>
-            <span class="cor1">fimse</span>
-        <span class="cor1">fimpara</span>
-        <span class="cor1">se</span> <strong>quantidade</strong> = <span class="cor2">2</span> <span class="cor1">entao</span>
-            <strong>cont</strong> &#60;- <strong>cont</strong> + <span class="cor2">1</span>
-            <strong>vet</strong>[<strong>cont</strong>] &#60;- <strong>numero</strong>
-        <span class="cor1">fimse</span>
-        <strong>numero</strong> &#60;- <strong>numero</strong> + <span class="cor2">1</span>
-    <span class="cor1">fimenquanto</span>
-    <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">100</span> <span class="cor1">faca</span>
-        <span class="cor1">escreval</span>(<strong>vet</strong>[<strong>i</strong>])
-    <span class="cor1">fimpara</span>
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor 1: "</span>)
+    <span class="cor1">leia</span>(<strong>v1</strong>)
+    <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor 2: "</span>)
+    <span class="cor1">leia</span>(<strong>v2</strong>)
+    <strong>realizarOperacoesAritmeticas</strong>(<strong>v1</strong>, <strong>v2</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
             <p><a href="assets/exercises/visualg/Exercicio3.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio3.alg</span></a></p>
             <hr>
@@ -114,6 +107,7 @@
                 <span class="cor1">retorne</span> <strong>testar</strong>(<strong>valorA</strong>, <strong>valorB</strong>)
             <span class="cor1">fimse</span>
         <span class="cor1">fimse</span>
+        <span class="cor1">retorne</span> <span class="cor2">0</span>
     <span class="cor1">fimfuncao</span>
 <span class="cor1">inicio</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Digite o valor de A: "</span>)
