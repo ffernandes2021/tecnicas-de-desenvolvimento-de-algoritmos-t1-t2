@@ -8,7 +8,7 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
 
 2. Criem um programa que ao usuário digitar um número, o programa exiba o mês correspondente. Utilizem ESCOLHA. Validem a entrada do usuário para números válidos (1-12). Valores fora deste intervalo, devem imprimir "Mês inválido! Tente novamente" e permitir que o usuário entre com um novo valor. O programa encerra digitando 0 (zero).
 
-3. Criem um vetor de 100 posições que é preenchido apenas por números primos. Utilize uma estrutura de repetição para popular o vetor. Por fim, imprima os valores em tela.
+3. Crie um procedimento que receba dois valores reais digitados pelo usuário e, com estes imprima o resultado das quatro operações aritméticas.
 
 4. Criem um programa que represente o fluxograma abaixo:
 
@@ -73,6 +73,8 @@ Neste fórum convido-lhes a realizar os exercícios abaixo no [**VisuAlg**](http
     - a idade dessa pessoa em meses;
     - a idade dessa pessoa em semanas;
     - a idade dessa pessoa em dias.
+
+É **opcional** a realização em outra linguagem de programação.
 
 Esta atividade não é pontuada, no entanto, muito importante para o desenvolvimento de seu conhecimento sobre o assunto.
 
