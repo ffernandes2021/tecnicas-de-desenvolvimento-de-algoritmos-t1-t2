@@ -34,10 +34,10 @@
 <p><a href="assets/exercises/visualg/Exercicio1.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio1.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex1-jv">
-<pre><code>public class Exercicio1 {
-    public static void main(String[] args) {
-        for (int i = 1; i &#60;= 10; i++) {
-            System.out.println("9 * " + i + " = " + 9 * i);
+    <pre><code><span class="cor1">public class</span> <strong>Exercicio1</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        <span class="cor1">for</span> (<span class="cor1">int</span> i = 1; i &#60;= 10; i++) {
+            System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"9 * "</span> + i + <span class="cor5">" = "</span> + 9 * i);
         }
     }
 }</code></pre>
@@ -99,60 +99,60 @@
 <p><a href="assets/exercises/visualg/Exercicio2.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio2.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex2-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio2 {
-    public static void main(String[] args) {        
-        Scanner scanner = new Scanner(System.in);
-        int mes;
-        do {            
-            System.out.print("Digite o mês [1 - 12] ou [0] para sair: ");
+    <pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio2</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {        
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        <span class="cor1">int</span> mes;
+        <span class="cor1">do</span> {            
+            System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o mês [1 - 12] ou [0] para sair: "</span>);
             mes = scanner.nextInt();
-            if (mes == 0) {
-                System.out.println("Encerrado");
-            } else {
-                switch (mes) {
-                    case 1:
-                        System.out.println("Janeiro");
-                        break;
-                    case 2:
-                        System.out.println("Fevereiro");
-                        break;
-                    case 3:
-                        System.out.println("Março");
-                        break;
-                    case 4:
-                        System.out.println("Abril");
-                        break;
-                    case 5:
-                        System.out.println("Maio");
-                        break;
-                    case 6:
-                        System.out.println("Junho");
-                        break;
-                    case 7:
-                        System.out.println("Julho");
-                        break;
-                    case 8:
-                        System.out.println("Agosto");
-                        break;
-                    case 9:
-                        System.out.println("Setembro");
-                        break;
-                    case 10:
-                        System.out.println("Outubro");
-                        break;
-                    case 11:
-                        System.out.println("Novembro");
-                        break;
-                    case 12:
-                        System.out.println("Dezembro");
-                        break;
-                    default:
-                        System.out.println("Mês inválido! Tente novamente.");
-                        break;
+            <span class="cor1">if</span> (mes == 0) {
+                System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Encerrado"</span>);
+            } <span class="cor1">else</span> {
+                <span class="cor1">switch</span> (mes) {
+                    <span class="cor1">case</span> 1:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Janeiro"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 2:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Fevereiro"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 3:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Março"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 4:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Abril"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 5:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Maio"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 6:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Junho"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 7:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Julho"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 8:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Agosto"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 9:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Setembro"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 10:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Outubro"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 11:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Novembro"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">case</span> 12:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Dezembro"</span>);
+                        <span class="cor1">break</span>;
+                    <span class="cor1">default</span>:
+                        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Mês inválido! Tente novamente."</span>);
+                        <span class="cor1">break</span>;
                 }
             }
-        } while (mes != 0);
+        } <span class="cor1">while</span> (mes != 0);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio2.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio2.java</span></a></p>
@@ -189,23 +189,23 @@ public class Exercicio2 {
 <p><a href="assets/exercises/visualg/Exercicio3.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio3.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex3-jv">
-<pre><code>import java.util.Locale;
-import java.util.Scanner;
-public class Exercicio3 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.US);
-        System.out.print("Digite o valor 1: ");
-        double v1 = scanner.nextDouble();
-        System.out.print("Digite o valor 2: ");
-        double v2 = scanner.nextDouble();
-        realizarOperacoesAritmeticas(v1, v2);
+    <pre><code><span class="cor1">import</span> java.util.Locale;
+<span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public</span> class <strong>Exercicio3</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        scanner.useLocale(Locale.<span class="cor4"><em>US</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o valor 1: "</span>);
+        <span class="cor1">double</span> v1 = scanner.nextDouble();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o valor 2: "</span>);
+        <span class="cor1">double</span> v2 = scanner.nextDouble();
+        <em>realizarOperacoesAritmeticas</em>(v1, v2);
     }    
-    public static void realizarOperacoesAritmeticas(double valor1, double valor2) {        
-        System.out.println("Adição: " + (valor1 + valor2));
-        System.out.println("Subtração: " + (valor1 - valor2));
-        System.out.println("Multiplicação: " + (valor1 * valor2));
-        System.out.println("Divisão: " + (valor1 / valor2));
+    <span class="cor1">public static void</span> <strong><em>realizarOperacoesAritmeticas</em></strong>(<span class="cor1">double</span> valor1, <span class="cor1">double</span> valor2) {        
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Adição: "</span> + (valor1 + valor2));
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Subtração: "</span> + (valor1 - valor2));
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Multiplicação: "</span> + (valor1 * valor2));
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Divisão: "</span> + (valor1 / valor2));
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio3.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio3.java</span></a></p>
@@ -255,33 +255,33 @@ public class Exercicio3 {
 <p><a href="assets/exercises/visualg/Exercicio4.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio4.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex4-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio4 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o valor de A: ");
-        int a = scanner.nextInt();
-        System.out.print("Digite o valor de B: ");
-        int b = scanner.nextInt();
-        System.out.print(testar(a, b));
+    <pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio4</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o valor de A: "</span>);
+        <span class="cor1">int</span> a = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o valor de B: "</span>);
+        <span class="cor1">int</span> b = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<em>testar</em>(a, b));
     }   
-    public static int testar(int valorA, int valorB) {
-        if (valorA == 0) {
-            if (valorB == 0) {
-                System.out.print("A = B");                
-            } else {
-                System.out.print("A &#60; B");
+    <span class="cor1">public static int</span> <strong><em>testar</em></strong>(<span class="cor1">int</span> valorA, <span class="cor1">int</span> valorB) {
+        <span class="cor1">if</span> (valorA == 0) {
+            <span class="cor1">if</span> (valorB == 0) {
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"A = B"</span>);                
+            } <span class="cor1">else</span> {
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"A &#60; B"</span>);
             }
-        } else {
-            if (valorB == 0) {
-                System.out.print("A &#62; B");
-            } else {
+        } <span class="cor1">else</span> {
+            <span class="cor1">if</span> (valorB == 0) {
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"A &#62; B"</span>);
+            } <span class="cor1">else</span> {
                 valorA--;
                 valorB--;
-                return testar(valorA, valorB);
+                <span class="cor1">return</span> <em>testar</em>(valorA, valorB);
             }
         } 
-        return 0;
+        <span class="cor1">return</span> 0;
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio4.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio4.java</span></a></p>
@@ -321,23 +321,23 @@ public class Exercicio4 {
 <p><a href="assets/exercises/visualg/Exercicio5.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio5.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex5-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio5 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite um número: ");
-        int numero = scanner.nextInt();
-        if (numero &#62;= 0) {
-            if (numero % 2 == 0) {
-                System.out.print("positivo e par");
-            } else {
-                System.out.print("positivo e ímpar");
+    <pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio5</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite um número: "</span>);
+        <span class="cor1">int</span> numero = scanner.nextInt();
+        <span class="cor1">if</span> (numero &#62;= 0) {
+            <span class="cor1">if</span> (numero % 2 == 0) {
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"positivo e par"</span>);
+            } <span class="cor1">else</span> {
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"positivo e ímpar"</span>);
             }
-        } else {
-            if (numero % 2 == 0) {
-                System.out.print("negativo e par");
-            } else {
-                System.out.print("negativo e ímpar");
+        } <span class="cor1">else</span> {
+            <span class="cor1">if</span> (numero % 2 == 0) {
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"negativo e par"</span>);
+            } <span class="cor1">else</span> {
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"negativo e ímpar"</span>);
             }
         }
     }
@@ -368,13 +368,13 @@ public class Exercicio5 {
 <p><a href="assets/exercises/visualg/Exercicio6.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio6.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex6-jv">
-<pre><code>public class Exercicio6 {
-    public static void main(String[] args) {
-        int soma = 0;
-        for (int i = 1; i &#60;= 100; i++) {
+    <pre><code><span class="cor1">public class</span> <strong>Exercicio6</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        <span class="cor1">int</span> soma = 0;
+        <span class="cor1">for</span> (<span class="cor1">int</span> i = 1; i &#60;= 100; i++) {
             soma = soma + i;
         }
-        System.out.print(soma);    
+        System.<span class="cor4"><em>out</em></span>.print(soma);    
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio6.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio6.java</span></a></p>
@@ -404,17 +404,17 @@ public class Exercicio5 {
 <p><a href="assets/exercises/visualg/Exercicio7.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio7.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex7-jv">
-<pre><code>import java.util.Locale;
-import java.util.Scanner;
-public class Exercicio7 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.US);
-        System.out.print("Digite a temperatura em Fahrenheit: ");
-        double tempFahrenheit = scanner.nextDouble();
-        double tempCelsius = (5 * (tempFahrenheit - 32) / 9);
-        System.out.printf(Locale.US, "%.2fº F %n", tempFahrenheit);
-        System.out.printf(Locale.US, "%.2fº C %n", tempCelsius);
+<pre><code><span class="cor1">import</span> java.util.Locale;
+<span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio7</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        scanner.useLocale(Locale.<span class="cor4"><em>US</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a temperatura em Fahrenheit: "</span>);
+        <span class="cor1">double</span> tempFahrenheit = scanner.nextDouble();
+        <span class="cor1">double</span> tempCelsius = (5 * (tempFahrenheit - 32) / 9);
+        System.<span class="cor4"><em>out</em></span>.printf(Locale.<span class="cor4"><em>US</em></span>, <span class="cor5">"%.2fº F %n"</span>, tempFahrenheit);
+        System.<span class="cor4"><em>out</em></span>.printf(Locale.<span class="cor4"><em>US</em></span>, <span class="cor5">"%.2fº C %n"</span>, tempCelsius);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio7.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio7.java</span></a></p>
@@ -461,35 +461,35 @@ public class Exercicio7 {
 <p><a href="assets/exercises/visualg/Exercicio8.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio8.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex8-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio8 {
-    public static void main(String[] args) {
-        int c1 = 0;
-        int c2 = 0;
-        int c3 = 0;        
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o total de votantes: ");
-        int qtdeVotantes = scanner.nextInt();
-        for (int i = 1; i &#60;= qtdeVotantes; i++) {
-            System.out.print("Digite seu voto (1 | 2 | 3): ");
-            int voto = scanner.nextInt();
-            while ((voto != 1) && (voto != 2) && (voto != 3)) {
-                System.out.print("Candidato inexistente! Tente novamente (1 | 2 | 3): ");
+<pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio8</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        <span class="cor1">int</span> c1 = 0;
+        <span class="cor1">int</span> c2 = 0;
+        <span class="cor1">int</span> c3 = 0;        
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o total de votantes: "</span>);
+        <span class="cor1">int</span> qtdeVotantes = scanner.nextInt();
+        <span class="cor1">for</span> (<span class="cor1">int</span> i = 1; i &#60;= qtdeVotantes; i++) {
+            System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite seu voto (1 | 2 | 3): "</span>);
+            <span class="cor1">int</span> voto = scanner.nextInt();
+            <span class="cor1">while</span> ((voto != 1) && (voto != 2) && (voto != 3)) {
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Candidato inexistente! Tente novamente (1 | 2 | 3): "</span>);
                 voto = scanner.nextInt();
             }
-            if (voto == 1) {
+            <span class="cor1">if</span> (voto == 1) {
                 c1++;
-            } else {
-                if (voto == 2) {
+            } <span class="cor1">else</span> {
+                <span class="cor1">if</span> (voto == 2) {
                     c2++;
-                } else {
+                } <span class="cor1">else</span> {
                     c3++;
                 }
             }
         }
-        System.out.println("Votos C1: " + c1);
-        System.out.println("Votos C2: " + c2);
-        System.out.println("Votos C3: " + c3);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Votos C1: "</span> + c1);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Votos C2: "</span> + c2);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Votos C3: "</span> + c3);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio8.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio8.java</span></a></p>
@@ -524,17 +524,17 @@ public class Exercicio8 {
 <p><a href="assets/exercises/visualg/Exercicio9.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio9.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex9-jv">
-<pre><code>public class Exercicio9 {
-    public static void main(String[] args) {
-        double alturaAnacleto = 1.50;
-        double alturaFelisberto = 1.10;
-        int i = 0;        
-        while (alturaFelisberto &#60;= alturaAnacleto) {
+    <pre><code><span class="cor1">public class</span> <strong>Exercicio9</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        <span class="cor1">double</span> alturaAnacleto = 1.50;
+        <span class="cor1">double</span> alturaFelisberto = 1.10;
+        <span class="cor1">int</span> i = 0;        
+        <span class="cor1">while</span> (alturaFelisberto &#60;= alturaAnacleto) {
             i++;
             alturaAnacleto = alturaAnacleto + 0.02;
             alturaFelisberto = alturaFelisberto + 0.03;            
         }        
-        System.out.print("Quantidade de anos: " + i);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Quantidade de anos: "</span> + i);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio9.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio9.java</span></a></p>
@@ -566,17 +566,17 @@ public class Exercicio8 {
 <p><a href="assets/exercises/visualg/Exercicio10.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio10.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex10-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio10 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite a idade em anos: ");
-        int ano = scanner.nextInt();
-        System.out.print("Digite a idade em meses: ");
-        int mes = scanner.nextInt();
-        System.out.print("Digite a idade em dias: ");
-        int dia = scanner.nextInt();
-        System.out.print("Idade em dias: " + (ano * 365 + mes * 30 + dia));
+<pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio10</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a idade em anos: "</span>);
+        <span class="cor1">int</span> ano = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a idade em meses: "</span>);
+        <span class="cor1">int</span> mes = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a idade em dias: "</span>);
+        <span class="cor1">int</span> dia = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Idade em dias: "</span> + (ano * 365 + mes * 30 + dia));
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio10.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio10.java</span></a></p>
@@ -633,35 +633,35 @@ public class Exercicio10 {
 <p><a href="assets/exercises/visualg/Exercicio11.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio11.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex11-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio11 {
-    public static void main(String[] args) {
+<pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio11</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
         String categoria;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite a idade: ");
-        int idade = scanner.nextInt();
-        if ((idade &#62;= 5) && (idade &#60;= 7)) {
-            categoria = "infantil A";
-        } else {
-            if ((idade &#62;= 8) && (idade &#60;= 10)) {
-                categoria = "infantil B";
-            } else {
-                if ((idade &#62;= 11) && (idade &#60;= 13)) {
-                    categoria = "juvenil A";
-                } else {
-                    if ((idade &#62;= 14) && (idade &#60;= 17)) {
-                        categoria = "juvenil B";
-                    } else {
-                        if((idade &#62;= 18)){
-                            categoria = "adulto";
-                        } else {
-                            categoria = "não definida";
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a idade: "</span>);
+        <span class="cor1">int</span> idade = scanner.nextInt();
+        <span class="cor1">if</span> ((idade &#62;= 5) && (idade &#60;= 7)) {
+            categoria = <span class="cor5">"infantil A"</span>;
+        } <span class="cor1">else</span> {
+            <span class="cor1">if</span> ((idade &#62;= 8) && (idade &#60;= 10)) {
+                categoria = <span class="cor5">"infantil B"</span>;
+            } <span class="cor1">else</span> {
+                <span class="cor1">if</span> ((idade &#62;= 11) && (idade &#60;= 13)) {
+                    categoria = <span class="cor5">"juvenil A"</span>;
+                } <span class="cor1">else</span> {
+                    <span class="cor1">if</span> ((idade &#62;= 14) && (idade &#60;= 17)) {
+                        categoria = <span class="cor5">"juvenil B"</span>;
+                    } <span class="cor1">else</span> {
+                        <span class="cor1">if</span>((idade &#62;= 18)){
+                            categoria = <span class="cor5">"adulto"</span>;
+                        } <span class="cor1">else</span> {
+                            categoria = <span class="cor5">"não definida"</span>;
                         }
                     }
                 }
             }
         }
-        System.out.print("Categoria: " + categoria);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Categoria: "</span> + categoria);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio11.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio11.java</span></a></p>
@@ -702,21 +702,21 @@ public class Exercicio11 {
 <p><a href="assets/exercises/visualg/Exercicio12.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio12.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex12-jv">
-<pre><code>import java.util.Locale;
-import java.util.Scanner;
-public class Exercicio12 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.US);
-        System.out.print("Digite o sexo (m | f): ");
-        char sexo = scanner.next().charAt(0);
-        System.out.print("Digite a altura: ");
-        double h = scanner.nextDouble();
-        if ((sexo == 'm') || (sexo == 'M')) {
-            System.out.print("Peso ideal: " + (72.7 * h - 58));
-        } else {
-            if((sexo == 'f') || (sexo == 'F')){
-                System.out.print("Peso ideal: " + (62.1 * h - 44.7));
+<pre><code><span class="cor1">import</span> java.util.Locale;
+<span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio12</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        scanner.useLocale(Locale.<span class="cor4"><em>US</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o sexo (m | f): "</span>);
+        <span class="cor1">char</span> sexo = scanner.next().charAt(0);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a altura: "</span>);
+        <span class="cor1">double</span> h = scanner.nextDouble();
+        <span class="cor1">if</span> ((sexo == <span class="cor5">'m'</span>) || (sexo == <span class="cor5">'M'</span>)) {
+            System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Peso ideal: "</span> + (72.7 * h - 58));
+        } <span class="cor1">else</span> {
+            <span class="cor1">if</span>((sexo == <span class="cor5">'f'</span>) || (sexo == <span class="cor5">'F'</span>)){
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Peso ideal: "</span> + (62.1 * h - 44.7));
             }
         }
     }
@@ -776,33 +776,33 @@ public class Exercicio12 {
 <p><a href="assets/exercises/visualg/Exercicio13.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio13.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex13-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio13 {
-    public static void main(String[] args) {
-        double precoUnidade = 0;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o código do produto: ");
-        int codigoProduto = scanner.nextInt();
-        while ((codigoProduto != 1001) && (codigoProduto != 1324) && (codigoProduto != 6548) && (codigoProduto != 987) && (codigoProduto != 7623)) {
-            System.out.print("Código inválido! Tente novamente (1001 | 1324 | 6548 | 0987 | 7623): ");
+<pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio13</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        <span class="cor1">double</span> precoUnidade = 0;
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o código do produto: "</span>);
+        <span class="cor1">int</span> codigoProduto = scanner.nextInt();
+        <span class="cor1">while</span> ((codigoProduto != 1001) && (codigoProduto != 1324) && (codigoProduto != 6548) && (codigoProduto != 987) && (codigoProduto != 7623)) {
+            System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Código inválido! Tente novamente (1001 | 1324 | 6548 | 0987 | 7623): "</span>);
         }
-        System.out.print("Digite a quantidade: ");
-        int quantidade = scanner.nextInt();
-        switch (codigoProduto) {
-            case 1001:
-            case 987:
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a quantidade: "</span>);
+        <span class="cor1">int</span> quantidade = scanner.nextInt();
+        <span class="cor1">switch</span> (codigoProduto) {
+            <span class="cor1">case</span> 1001:
+            <span class="cor1">case</span> 987:
                 precoUnidade = 5.32;
-                break;
-            case 1324:
-            case 7623:
+                <span class="cor1">break</span>;
+            <span class="cor1">case</span> 1324:
+            <span class="cor1">case</span> 7623:
                 precoUnidade = 6.45;
-                break;
-            case 6548:
+                <span class="cor1">break</span>;
+            <span class="cor1">case</span> 6548:
                 precoUnidade = 2.37;
-                break;
+                <span class="cor1">break</span>;
         }
-        double precoTotal = quantidade * precoUnidade; 
-        System.out.print("Preço total: " + precoTotal);
+        <span class="cor1">double</span> precoTotal = quantidade * precoUnidade; 
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Preço total: "</span> + precoTotal);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio13.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio13.java</span></a></p>
@@ -856,35 +856,35 @@ public class Exercicio13 {
 <p><a href="assets/exercises/visualg/Exercicio14.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio14.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex14-jv">
-<pre><code>import java.util.Locale;
-import java.util.Scanner;
-public class Exercicio14 {
-    public static void main(String[] args) {
-        double novoSalario;        
-        Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.US);
-        System.out.print("Digite o salário: ");
-        double salario = scanner.nextDouble();
-        System.out.print("Digite o código do cargo: ");
-        int codigoCargo = scanner.nextInt();
-        switch (codigoCargo) {
-            case 101:
+<pre><code><span class="cor1">import</span> java.util.Locale;
+<span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio14</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        <span class="cor1">double</span> novoSalario;        
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        scanner.useLocale(Locale.<span class="cor4"><em>US</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o salário: "</span>);
+        <span class="cor1">double</span> salario = scanner.nextDouble();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o código do cargo: "</span>);
+        <span class="cor1">int</span> codigoCargo = scanner.nextInt();
+        <span class="cor1">switch</span> (codigoCargo) {
+            <span class="cor1">case</span> 101:
                 novoSalario = salario + salario * 10 / 100;
-                break;
-            case 102:
+                <span class="cor1">break</span>;
+            <span class="cor1">case</span> 102:
                 novoSalario = salario + salario * 20 / 100;
-                break;
-            case 103:
+                <span class="cor1">break</span>;
+            <span class="cor1">case</span> 103:
                 novoSalario = salario + salario * 30 / 100;
-                break;
-            default:
+                <span class="cor1">break</span>;
+            <span class="cor1">default</span>:
                 novoSalario = salario + salario * 40 / 100;
-                break;
+                <span class="cor1">break</span>;
         }
-        double diferenca = novoSalario - salario;
-        System.out.println("Salário antigo: " + salario);
-        System.out.println("Novo salário: " + novoSalario);
-        System.out.println("Diferença: " + diferenca);
+        <span class="cor1">double</span> diferenca = novoSalario - salario;
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Salário antigo: "</span> + salario);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Novo salário: "</span> + novoSalario);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Diferença: "</span> + diferenca);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio14.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio14.java</span></a></p>
@@ -966,51 +966,51 @@ public class Exercicio14 {
 <p><a href="assets/exercises/visualg/Exercicio15.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio15.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex15-jv">
-<pre><code>import java.util.Locale;
-import java.util.Scanner;
-public class Exercicio15 {
-    public static void main(String[] args) {
-        double menor = 0;
-        double medio = 0;
-        double maior = 0;
-        Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.US);
-        System.out.print("Digite o valor de i (1 | 2 | 3): ");
-        int i = scanner.nextInt();
-        System.out.print("Digite o valor de a: ");
-        double a = scanner.nextDouble();
-        System.out.print("Digite o valor de b: ");
-        double b = scanner.nextDouble();
-        System.out.print("Digite o valor de c: ");
-        double c = scanner.nextDouble();
-        if ((a &#62; b) && (a &#62; c)) {
-            if (b &#62; c) {
+<pre><code><span class="cor1">import</span> java.util.Locale;
+<span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio15</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        <span class="cor1">double</span> menor = 0;
+        <span class="cor1">double</span> medio = 0;
+        <span class="cor1">double</span> maior = 0;
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        scanner.useLocale(Locale.<span class="cor4"><em>US</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o valor de i (1 | 2 | 3): "</span>);
+        <span class="cor1">int</span> i = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o valor de a: "</span>);
+        <span class="cor1">double</span> a = scanner.nextDouble();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o valor de b: "</span>);
+        <span class="cor1">double</span> b = scanner.nextDouble();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o valor de c: "</span>);
+        <span class="cor1">double</span> c = scanner.nextDouble();
+        <span class="cor1">if</span> ((a &#62; b) && (a &#62; c)) {
+            <span class="cor1">if</span> (b &#62; c) {
                 maior = a;
                 medio = b;
                 menor = c;
-            } else {
+            } <span class="cor1">else</span> {
                 maior = a;
                 medio = c;
                 menor = b;
             }
-        } else {
-            if ((b &#62; a) && (b &#62; c)) {
-                if (a &#62; c) {
+        } <span class="cor1">else</span> {
+            <span class="cor1">if</span> ((b &#62; a) && (b &#62; c)) {
+                <span class="cor1">if</span> (a &#62; c) {
                     maior = b;
                     medio = a;
                     menor = c;
-                } else {
+                } <span class="cor1">else</span> {
                     maior = b;
                     medio = c;
                     menor = a;
                 }
-            } else {
-                if ((c &#62; a) && (c &#62; b)) {
-                    if (a &#62; b) {
+            } <span class="cor1">else</span> {
+                <span class="cor1">if</span> ((c &#62; a) && (c &#62; b)) {
+                    <span class="cor1">if</span> (a &#62; b) {
                         maior = c;
                         medio = a;
                         menor = b;
-                    } else {
+                    } <span class="cor1">else</span> {
                         maior = c;
                         medio = b;
                         menor = a;
@@ -1018,16 +1018,16 @@ public class Exercicio15 {
                 }
             }
         }
-        switch (i) {
-            case 1:
-                System.out.print("Os números em ordem crescente: " + menor + ", " + medio + ", " + maior);
-                break;
-            case 2:
-                System.out.print("Os números em ordem decrescente: " + maior + ", " + medio + ", " + menor);
-                break;
-            case 3:
-                System.out.print("O maior entre os outros dois: " + menor + ", " + maior + ", " + medio + " ou " + medio + ", " + maior + ", " + menor);
-                break;
+        <span class="cor1">switch</span> (i) {
+            <span class="cor1">case</span> 1:
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Os números em ordem crescente: "</span> + menor + <span class="cor5">", "</span> + medio + <span class="cor5">", "</span> + maior);
+                <span class="cor1">break</span>;
+            <span class="cor1">case</span> 2:
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Os números em ordem decrescente: "</span> + maior + <span class="cor5">", "</span> + medio + <span class="cor5">", "</span> + menor);
+                <span class="cor1">break</span>;
+            <span class="cor1">case</span> 3:
+                System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"O maior entre os outros dois: "</span> + menor + <span class="cor5">", "</span> + maior + <span class="cor5">", "</span> + medio + <span class="cor5">" ou "</span> + medio + <span class="cor5">", "</span> + maior + <span class="cor5">", "</span> + menor);
+                <span class="cor1">break</span>;
         }
     }
 }</code></pre>
@@ -1062,18 +1062,18 @@ public class Exercicio15 {
 <p><a href="assets/exercises/visualg/Exercicio16.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio16.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex16-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio16 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);        
-        System.out.print("Digite a quantidade de pães: ");
-        int quantidadePao = scanner.nextInt();        
-        System.out.print("Digite a quantidade de broas: ");
-        int quantidadeBroa = scanner.nextInt();        
-        double total = quantidadePao * 0.12 + quantidadeBroa * 1.50;
-        double totalPoupanca = total * 10 / 100;        
-        System.out.println("Valor arrecadado: R$ " + total);
-        System.out.println("Valor para poupança: R$ " + totalPoupanca);
+<pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio16</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);        
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a quantidade de pães: "</span>);
+        <span class="cor1">int</span> quantidadePao = scanner.nextInt();        
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a quantidade de broas: "</span>);
+        <span class="cor1">int</span> quantidadeBroa = scanner.nextInt();        
+        <span class="cor1">double</span> total = quantidadePao * 0.12 + quantidadeBroa * 1.50;
+        <span class="cor1">double</span> totalPoupanca = total * 10 / 100;        
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Valor arrecadado: R$ "</span> + total);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Valor para poupança: R$ "</span> + totalPoupanca);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio16.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio16.java</span></a></p>
@@ -1105,19 +1105,19 @@ public class Exercicio16 {
 <p><a href="assets/exercises/visualg/Exercicio17.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio17.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex17-jv">
-<pre><code>import java.util.Locale;
-import java.util.Scanner;
-public class Exercicio17 {
-    public static void main(String[] args) {        
-        Scanner scanner = new Scanner(System.in); 
-        scanner.useLocale(Locale.US);
-        System.out.print("Digite o salário: ");
-        double salarioInicial = scanner.nextDouble();
-        double salarioAumento = salarioInicial + salarioInicial * 0.15;
-        double salarioFinal = salarioAumento - salarioAumento * 0.08;
-        System.out.println("Salário inicial: " + salarioInicial);
-        System.out.println("Salário com aumento: " + salarioAumento);
-        System.out.println("Salário final: " + salarioFinal);        
+<pre><code><span class="cor1">import</span> java.util.Locale;
+<span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio17</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {        
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>); 
+        scanner.useLocale(Locale.<span class="cor4"><em>US</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o salário: "</span>);
+        <span class="cor1">double</span> salarioInicial = scanner.nextDouble();
+        <span class="cor1">double</span> salarioAumento = salarioInicial + salarioInicial * 0.15;
+        <span class="cor1">double</span> salarioFinal = salarioAumento - salarioAumento * 0.08;
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Salário inicial: "</span> + salarioInicial);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Salário com aumento: "</span> + salarioAumento);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Salário final: "</span> + salarioFinal);        
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio17.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio17.java</span></a></p>
@@ -1157,28 +1157,28 @@ public class Exercicio17 {
 <p><a href="assets/exercises/visualg/Exercicio18.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio18.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex18-jv">
-<pre><code>import java.util.Locale;
-import java.util.Scanner;
-public class Exercicio18 {
-    public static void main(String[] args) {
-        double peso;
-        int posicao = 0;
-        double vet[] = new double[150];
-        Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.US);        
-        for (int i = 0; i &#60; vet.length; i++) {
-            System.out.print("Digite o peso: ");
+<pre><code><span class="cor1">import</span> java.util.Locale;
+<span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio18</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {
+        <span class="cor1">double</span> peso;
+        <span class="cor1">int</span> posicao = 0;
+        <span class="cor1">double</span> vet[] = <span class="cor1">new double</span>[150];
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        scanner.useLocale(Locale.<span class="cor4"><em>US</em></span>);        
+        <span class="cor1">for</span> (<span class="cor1">int</span> i = 0; i &#60; vet.<span class="cor4">length</span>; i++) {
+            System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o peso: "</span>);
             peso = scanner.nextDouble();
             vet[i] = peso;
         }        
         peso = vet[0];        
-        for (int i = 0; i &#60; vet.length; i++) {
-            if (vet[i] &#60; peso) {
+        <span class="cor1">for</span> (<span class="cor1">int</span> i = 0; i &#60; vet.<span class="cor4">length</span>; i++) {
+            <span class="cor1">if</span> (vet[i] &#60; peso) {
                 peso = vet[i];
                 posicao = i;
             }
         }        
-        System.out.print("Na posição: " + posicao + " está o menor peso, que é " + peso);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Na posição: "</span> + posicao + <span class="cor5">" está o menor peso, que é "</span> + peso);
     }
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio18.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio18.java</span></a></p>
@@ -1210,17 +1210,17 @@ public class Exercicio18 {
 <p><a href="assets/exercises/visualg/Exercicio19.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio19.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex19-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio19 {
-    public static void main(String[] args) {        
-        Scanner scanner = new Scanner(System.in);
-        System.out. print("Digite a quantidade de latas (350ml): ");
-        int quantidadeF1 = scanner.nextInt();
-        System.out.print("Digite a quantidade de garrafas (600ml): ");
-        int quantidadeF2 = scanner.nextInt();
-        System.out.print("Digite a quantidade de garrafas (2l): ");
-        int quantidadeF3 = scanner.nextInt();
-        System.out.print("Quantidade em litros: " + (quantidadeF1 * 0.350 + quantidadeF2 * 0.600 + quantidadeF3 * 2));
+<pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio19</strong> {
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {        
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a quantidade de latas (350ml): "</span>);
+        <span class="cor1">int</span> quantidadeF1 = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a quantidade de garrafas (600ml): "</span>);
+        <span class="cor1">int</span> quantidadeF2 = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite a quantidade de garrafas (2l): "</span>);
+        <span class="cor1">int</span> quantidadeF3 = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Quantidade em litros: "</span> + (quantidadeF1 * 0.350 + quantidadeF2 * 0.600 + quantidadeF3 * 2));
     }    
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio19.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio19.java</span></a></p>
@@ -1264,22 +1264,22 @@ public class Exercicio19 {
 <p><a href="assets/exercises/visualg/Exercicio20.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio20.alg</span></a></p>
 </div>
 <div class="tab-pane" id="ex20-jv">
-<pre><code>import java.util.Scanner;
-public class Exercicio20 {    
-    public static void main(String[] args) {        
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o ano de nascimento: ");
-        int anoNascimento = scanner.nextInt();
-        System.out.print("Digite o ano atual: ");
-        int anoAtual = scanner.nextInt();
-        while (anoAtual &#60;= anoNascimento) {
-            System.out.print("O ano atual não pode ser inferior ou igual ao ano de nascimento! Tente novamente: ");
+<pre><code><span class="cor1">import</span> java.util.Scanner;
+<span class="cor1">public class</span> <strong>Exercicio20</strong> {    
+    <span class="cor1">public static void</span> <strong><em>main</em></strong>(String[] args) {        
+        Scanner scanner = <span class="cor1">new</span> Scanner(System.<span class="cor4"><em>in</em></span>);
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o ano de nascimento: "</span>);
+        <span class="cor1">int</span> anoNascimento = scanner.nextInt();
+        System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"Digite o ano atual: "</span>);
+        <span class="cor1">int</span> anoAtual = scanner.nextInt();
+        <span class="cor1">while</span> (anoAtual &#60;= anoNascimento) {
+            System.<span class="cor4"><em>out</em></span>.print(<span class="cor5">"O ano atual não pode ser inferior ou igual ao ano de nascimento! Tente novamente: "</span>);
             anoAtual = scanner.nextInt();
         }
-        int idadeAno = anoAtual - anoNascimento;
-        System.out.println("Idade em anos: " + idadeAno);
-        System.out.println("Idade em meses: " + idadeAno * 12);
-        System.out.println("Idade em dias: " + idadeAno * 365);  
+        <span class="cor1">int</span> idadeAno = anoAtual - anoNascimento;
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Idade em anos: "</span> + idadeAno);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Idade em meses: "</span> + idadeAno * 12);
+        System.<span class="cor4"><em>out</em></span>.println(<span class="cor5">"Idade em dias: "</span> + idadeAno * 365);  
     }    
 }</code></pre>
 <p><a href="assets/exercises/java/Exercicio20.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio20.java</span></a></p>
