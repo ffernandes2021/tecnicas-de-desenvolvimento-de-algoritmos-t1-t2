@@ -1,6 +1,6 @@
 body {
     background-color: #FDFDFD; 
-    margin: 131px 20px 20px 20px;
+    margin: 82px 20px 20px 20px;
 }
 
 #conteudo { 
@@ -40,8 +40,10 @@ p, ul {
 }
 
 pre {
+    border: solid 1px #DDD;
     font-size: 14px;
     margin-bottom: 20px;
+    margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -79,3 +81,8 @@ i {
 th, td {
     text-align: center;
 }
+
+hr {
+    border-top: solid 1px #DDD;
+}
+

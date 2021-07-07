@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Técnicas de Desenvolvimento de Algoritmos - T1T2</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css">
-    </head>
-    <body>
-        <div id="conteudo">
-            <div id="header">
-                <h4 class="truncate"><strong>TÉCNICAS DE DESENVOLVIMENTO DE ALGORITMOS</strong></h4>
-                <p>VisuAlg 3.0.7.0</p>
-            </div>
-            <p>1. Criem um programa que imprima a tabuada do número 9. Algo como 9x1 = 9, 9x2 = 18... imprima cada expressão em uma linha.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio1"</span>
+<head>
+<title>Técnicas de Desenvolvimento de Algoritmos - T1T2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css">
+</head>
+<body>
+<div id="conteudo">
+<div id="header">
+<h4 class="truncate"><strong>TÉCNICAS DE DESENVOLVIMENTO DE ALGORITMOS</strong></h4>
+</div>
+<p>1. Criem um programa que imprima a tabuada do número 9. Algo como 9x1 = 9, 9x2 = 18... imprima cada expressão em uma linha.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex1-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex1-jv">Java</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="ex1-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio1"</span>
     <span class="cor1">var</span> <strong>i</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">para</span> <strong>i</strong> <span class="cor1">de</span> <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">10</span> <span class="cor1">faca</span>        
         <span class="cor1">escreval</span>(<span class="cor2">"9 *"</span>,<strong>i</strong>,<span class="cor2">" ="</span>,<span class="cor2">9</span> * <strong>i</strong>)
     <span class="cor1">fimpara</span>
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio1.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio1.alg</span></a></p>
-            <hr>
-            <p>2. Criem um programa que ao usuário digitar um número, o programa exiba o mês correspondente. Utilizem ESCOLHA. Validem a entrada do usuário para números válidos (1-12). Valores fora deste intervalo, devem imprimir "Mês inválido! Tente novamente" e permitir que o usuário entre com um novo valor. O programa encerra digitando 0 (zero).</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio2"</span>
+<p><a href="assets/exercises/visualg/Exercicio1.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio1.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex1-jv">
+<pre><code>public class Exercicio1 {
+    public static void main(String[] args) {
+        for (int i = 1; i &#60;= 10; i++) {
+            System.out.println("9 * " + i + " = " + 9 * i);
+        }
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio1.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio1.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>2. Criem um programa que ao usuário digitar um número, o programa exiba o mês correspondente. Utilizem ESCOLHA. Validem a entrada do usuário para números válidos (1-12). Valores fora deste intervalo, devem imprimir "Mês inválido! Tente novamente" e permitir que o usuário entre com um novo valor. O programa encerra digitando 0 (zero).</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex2-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex2-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex2-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio2"</span>
     <span class="cor1">var</span> <strong>mes</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">repita</span>
@@ -65,10 +96,81 @@
         <span class="cor1">fimse</span>
     <span class="cor1">ate</span> <strong>mes</strong> = <span class="cor2">0</span>    
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio2.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio2.alg</span></a></p>
-            <hr>
-            <p>3. Crie um procedimento que receba dois valores reais digitados pelo usuário e, com estes imprima o resultado das quatro operações aritméticas.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio3"</span>
+<p><a href="assets/exercises/visualg/Exercicio2.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio2.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex2-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio2 {
+    public static void main(String[] args) {        
+        Scanner scanner = new Scanner(System.in);
+        int mes;
+        do {            
+            System.out.print("Digite o mês [1 - 12] ou [0] para sair: ");
+            mes = scanner.nextInt();
+            if (mes == 0) {
+                System.out.println("Encerrado");
+            } else {
+                switch (mes) {
+                    case 1:
+                        System.out.println("Janeiro");
+                        break;
+                    case 2:
+                        System.out.println("Fevereiro");
+                        break;
+                    case 3:
+                        System.out.println("Março");
+                        break;
+                    case 4:
+                        System.out.println("Abril");
+                        break;
+                    case 5:
+                        System.out.println("Maio");
+                        break;
+                    case 6:
+                        System.out.println("Junho");
+                        break;
+                    case 7:
+                        System.out.println("Julho");
+                        break;
+                    case 8:
+                        System.out.println("Agosto");
+                        break;
+                    case 9:
+                        System.out.println("Setembro");
+                        break;
+                    case 10:
+                        System.out.println("Outubro");
+                        break;
+                    case 11:
+                        System.out.println("Novembro");
+                        break;
+                    case 12:
+                        System.out.println("Dezembro");
+                        break;
+                    default:
+                        System.out.println("Mês inválido! Tente novamente.");
+                        break;
+                }
+            }
+        } while (mes != 0);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio2.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio2.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>3. Crie um procedimento que receba dois valores reais digitados pelo usuário e, com estes imprima o resultado das quatro operações aritméticas.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex3-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex3-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex3-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio3"</span>
     <span class="cor1">var</span> <strong>v1</strong>, <strong>v2</strong>: <span class="cor3">real</span>
     <span class="cor1">procedimento</span> <strong>realizarOperacoesAritmeticas</strong>(<strong>valor1</strong>, <strong>valor2</strong>: <span class="cor3">real</span>)
     <span class="cor1">inicio</span>
@@ -84,11 +186,45 @@
     <span class="cor1">leia</span>(<strong>v2</strong>)
     <strong>realizarOperacoesAritmeticas</strong>(<strong>v1</strong>, <strong>v2</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio3.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio3.alg</span></a></p>
-            <hr>
-            <p>4. Criem um programa que represente o fluxograma abaixo:</p>
-            <p><img src="assets/img/ex4.png" alt="Fluxograma que testa se A é maior, menor ou igual a B" class="img-responsive"></p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio4"</span>
+<p><a href="assets/exercises/visualg/Exercicio3.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio3.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex3-jv">
+<pre><code>import java.util.Locale;
+import java.util.Scanner;
+public class Exercicio3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
+        System.out.print("Digite o valor 1: ");
+        double v1 = scanner.nextDouble();
+        System.out.print("Digite o valor 2: ");
+        double v2 = scanner.nextDouble();
+        realizarOperacoesAritmeticas(v1, v2);
+    }    
+    public static void realizarOperacoesAritmeticas(double valor1, double valor2) {        
+        System.out.println("Adição: " + (valor1 + valor2));
+        System.out.println("Subtração: " + (valor1 - valor2));
+        System.out.println("Multiplicação: " + (valor1 * valor2));
+        System.out.println("Divisão: " + (valor1 / valor2));
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio3.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio3.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>4. Criem um programa que represente o fluxograma abaixo:</p>
+<p><img src="assets/img/ex4.png" alt="Fluxograma que testa se A é maior, menor ou igual a B" class="img-responsive"></p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex4-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex4-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex4-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio4"</span>
     <span class="cor1">var</span> <strong>a</strong>, <strong>b</strong>: <span class="cor3">inteiro</span>
     <span class="cor1">funcao</span> <strong>testar</strong>(<strong>valorA</strong>, <strong>valorB</strong>: <span class="cor3">inteiro</span>): <span class="cor3">inteiro</span>
     <span class="cor1">inicio</span>
@@ -116,10 +252,54 @@
     <span class="cor1">leia</span>(<strong>b</strong>)
     <span class="cor1">escreva</span>(<strong>testar</strong>(<strong>a</strong>, <strong>b</strong>))
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio4.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio4.alg</span></a></p>
-            <hr>
-            <p>5. Determinar se um número é par ou ímpar e positivo ou negativo.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio5"</span>
+<p><a href="assets/exercises/visualg/Exercicio4.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio4.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex4-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o valor de A: ");
+        int a = scanner.nextInt();
+        System.out.print("Digite o valor de B: ");
+        int b = scanner.nextInt();
+        System.out.print(testar(a, b));
+    }   
+    public static int testar(int valorA, int valorB) {
+        if (valorA == 0) {
+            if (valorB == 0) {
+                System.out.print("A = B");                
+            } else {
+                System.out.print("A &#60; B");
+            }
+        } else {
+            if (valorB == 0) {
+                System.out.print("A &#62; B");
+            } else {
+                valorA--;
+                valorB--;
+                return testar(valorA, valorB);
+            }
+        } 
+        return 0;
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio4.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio4.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>5. Determinar se um número é par ou ímpar e positivo ou negativo.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex5-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex5-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex5-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio5"</span>
     <span class="cor1">var</span> <strong>numero</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Digite um número: "</span>)
@@ -138,10 +318,46 @@
         <span class="cor1">fimse</span>
     <span class="cor1">fimse</span>
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio5.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio5.alg</span></a></p>
-            <hr>
-            <p>6. Faça um algoritmo que calcule a soma dos números inteiros de 1 a 100.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio6"</span>
+<p><a href="assets/exercises/visualg/Exercicio5.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio5.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex5-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        int numero = scanner.nextInt();
+        if (numero &#62;= 0) {
+            if (numero % 2 == 0) {
+                System.out.print("positivo e par");
+            } else {
+                System.out.print("positivo e ímpar");
+            }
+        } else {
+            if (numero % 2 == 0) {
+                System.out.print("negativo e par");
+            } else {
+                System.out.print("negativo e ímpar");
+            }
+        }
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio5.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio5.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>6. Faça um algoritmo que calcule a soma dos números inteiros de 1 a 100.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex6-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex6-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex6-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio6"</span>
     <span class="cor1">var</span> <strong>i</strong>, <strong>soma</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">para</span> <strong>i</strong> de <span class="cor2">1</span> <span class="cor1">ate</span> <span class="cor2">100</span> <span class="cor1">faca</span>
@@ -149,10 +365,34 @@
     <span class="cor1">fimpara</span>
     <span class="cor1">escreva</span>(<strong>soma</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio6.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio6.alg</span></a></p>
-            <hr>
-            <p>7. Faça um algoritmo que lê uma temperatura em Fahrenheit e calcula a temperatura correspondente em Celsius. Ao final o programa deve exibir as duas temperaturas (formatadas com até 2 casas decimais). Usar a fórmula C = (5 * (F-32) / 9).</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio7"</span>
+<p><a href="assets/exercises/visualg/Exercicio6.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio6.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex6-jv">
+<pre><code>public class Exercicio6 {
+    public static void main(String[] args) {
+        int soma = 0;
+        for (int i = 1; i &#60;= 100; i++) {
+            soma = soma + i;
+        }
+        System.out.print(soma);    
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio6.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio6.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>7. Faça um algoritmo que lê uma temperatura em Fahrenheit e calcula a temperatura correspondente em Celsius. Ao final o programa deve exibir as duas temperaturas (formatadas com até 2 casas decimais). Usar a fórmula C = (5 * (F-32) / 9).</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex7-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex7-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex7-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio7"</span>
     <span class="cor1">var</span> <strong>tempFahrenheit</strong>, <strong>tempCelsius</strong>: <span class="cor3">real</span>
 <span class="cor1">inicio</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Digite a temperatura em Fahrenheit: "</span>)
@@ -161,10 +401,38 @@
     <span class="cor1">escreval</span>(<strong>tempFahrenheit</strong>:<span class="cor2">2</span>,<span class="cor2">"º F"</span>)
     <span class="cor1">escreval</span>(<strong>tempCelsius</strong>:<span class="cor2">2</span>,<span class="cor2">"º C"</span>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio7.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio7.alg</span></a></p>
-            <hr>
-            <p>8. Numa eleição existem três candidatos identificados pelos números 1, 2 e 3. Faça um algoritmo que compute o resultado de uma eleição. Inicialmente o programa deve pedir o número total de votantes. Em seguida, deve pedir para cada votante votar (informando o numero do candidato) e ao final mostrar o número de votos de cada candidato.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio8"</span>
+<p><a href="assets/exercises/visualg/Exercicio7.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio7.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex7-jv">
+<pre><code>import java.util.Locale;
+import java.util.Scanner;
+public class Exercicio7 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
+        System.out.print("Digite a temperatura em Fahrenheit: ");
+        double tempFahrenheit = scanner.nextDouble();
+        double tempCelsius = (5 * (tempFahrenheit - 32) / 9);
+        System.out.printf(Locale.US, "%.2fº F %n", tempFahrenheit);
+        System.out.printf(Locale.US, "%.2fº C %n", tempCelsius);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio7.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio7.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>8. Numa eleição existem três candidatos identificados pelos números 1, 2 e 3. Faça um algoritmo que compute o resultado de uma eleição. Inicialmente o programa deve pedir o número total de votantes. Em seguida, deve pedir para cada votante votar (informando o numero do candidato) e ao final mostrar o número de votos de cada candidato.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex8-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex8-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex8-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio8"</span>
     <span class="cor1">var</span> <strong>c1</strong>, <strong>c2</strong>, <strong>c3</strong>, <strong>qtdeVotantes</strong>, <strong>i</strong>, <strong>voto</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Digite o total de votantes: "</span>)
@@ -190,10 +458,56 @@
     <span class="cor1">escreval</span>(<span class="cor2">"Votos C2: "</span>,<strong>c2</strong>)
     <span class="cor1">escreval</span>(<span class="cor2">"Votos C3: "</span>,<strong>c3</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio8.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio8.alg</span></a></p>
-            <hr>
-            <p>9. Anacleto tem 1.50m e cresce 2cm por ano, enquanto Felisberto tem 1.10m e cresce 3cm por ano. Construa um programa que calcule e apresente quantos anos serão necessários para que Felisberto seja maior que Anacleto.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio9"</span>
+<p><a href="assets/exercises/visualg/Exercicio8.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio8.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex8-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio8 {
+    public static void main(String[] args) {
+        int c1 = 0;
+        int c2 = 0;
+        int c3 = 0;        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o total de votantes: ");
+        int qtdeVotantes = scanner.nextInt();
+        for (int i = 1; i &#60;= qtdeVotantes; i++) {
+            System.out.print("Digite seu voto (1 | 2 | 3): ");
+            int voto = scanner.nextInt();
+            while ((voto != 1) && (voto != 2) && (voto != 3)) {
+                System.out.print("Candidato inexistente! Tente novamente (1 | 2 | 3): ");
+                voto = scanner.nextInt();
+            }
+            if (voto == 1) {
+                c1++;
+            } else {
+                if (voto == 2) {
+                    c2++;
+                } else {
+                    c3++;
+                }
+            }
+        }
+        System.out.println("Votos C1: " + c1);
+        System.out.println("Votos C2: " + c2);
+        System.out.println("Votos C3: " + c3);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio8.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio8.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>9. Anacleto tem 1.50m e cresce 2cm por ano, enquanto Felisberto tem 1.10m e cresce 3cm por ano. Construa um programa que calcule e apresente quantos anos serão necessários para que Felisberto seja maior que Anacleto.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex9-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex9-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex9-va">
+ <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio9"</span>
     <span class="cor1">var</span> <strong>alturaAnacleto</strong>, <strong>alturaFelisberto</strong>: <span class="cor3">real</span>
     <strong>i</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
@@ -207,10 +521,38 @@
     <span class="cor1">ate</span> <strong>alturaFelisberto</strong> &#62; <strong>alturaAnacleto</strong>
     <span class="cor1">escreva</span>(<span class="cor2">"Quantidade de anos: "</span>,<strong>i</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio9.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio9.alg</span></a></p>
-            <hr>
-            <p>10. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa apenas em dias.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio10"</span>
+<p><a href="assets/exercises/visualg/Exercicio9.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio9.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex9-jv">
+<pre><code>public class Exercicio9 {
+    public static void main(String[] args) {
+        double alturaAnacleto = 1.50;
+        double alturaFelisberto = 1.10;
+        int i = 0;        
+        while (alturaFelisberto &#60;= alturaAnacleto) {
+            i++;
+            alturaAnacleto = alturaAnacleto + 0.02;
+            alturaFelisberto = alturaFelisberto + 0.03;            
+        }        
+        System.out.print("Quantidade de anos: " + i);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio9.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio9.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>10. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa apenas em dias.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex10-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex10-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex10-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio10"</span>
     <span class="cor1">var</span> <strong>ano</strong>, <strong>mes</strong>, <strong>dia</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Digite a idade em anos: "</span>)
@@ -221,17 +563,45 @@
     <span class="cor1">leia</span>(<strong>dia</strong>)
     <span class="cor1">escreva</span>(<span class="cor2">"Idade em dias: "</span>, <strong>ano</strong> * <span class="cor2">365</span> + <strong>mes</strong> * <span class="cor2">30</span> + <strong>dia</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio10.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio10.alg</span></a></p>
-            <hr>
-            <p>11. Elabore um algoritmo que dada a idade de um nadador classifica-o em uma das seguintes categorias:</p>
-            <ul>
-                <li>infantil A = 5 - 7 anos</li>
-                <li>infantil B = 8 - 10 anos</li>
-                <li>juvenil A = 11 - 13 anos</li>
-                <li>juvenil B = 14 - 17 anos</li>
-                <li>adulto = maiores de 18 anos</li>	
-            </ul>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio11"</span>
+<p><a href="assets/exercises/visualg/Exercicio10.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio10.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex10-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio10 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a idade em anos: ");
+        int ano = scanner.nextInt();
+        System.out.print("Digite a idade em meses: ");
+        int mes = scanner.nextInt();
+        System.out.print("Digite a idade em dias: ");
+        int dia = scanner.nextInt();
+        System.out.print("Idade em dias: " + (ano * 365 + mes * 30 + dia));
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio10.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio10.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>11. Elabore um algoritmo que dada a idade de um nadador classifica-o em uma das seguintes categorias:</p>
+<ul>
+<li>infantil A = 5 - 7 anos</li>
+<li>infantil B = 8 - 10 anos</li>
+<li>juvenil A = 11 - 13 anos</li>
+<li>juvenil B = 14 - 17 anos</li>
+<li>adulto = maiores de 18 anos</li>	
+</ul>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex11-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex11-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex11-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio11"</span>
     <span class="cor1">var</span> <strong>idade</strong>: <span class="cor3">inteiro</span>
     <strong>categoria</strong>: <span class="cor3">caractere</span>
 <span class="cor1">inicio</span>
@@ -260,14 +630,60 @@
     <span class="cor1">fimse</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Categoria: "</span>,<strong>categoria</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio11.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio11.alg</span></a></p>
-            <hr>	
-            <p>12. Tendo como dados de entrada a altura e o sexo de uma pessoa (masculino (M) e (F) feminino), construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:</p>
-            <ul>
-                <li>para homens: (72.7 * h) - 58</li>
-                <li>para mulheres: (62.1 * h) - 44.7</li>
-            </ul>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio12"</span>
+<p><a href="assets/exercises/visualg/Exercicio11.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio11.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex11-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio11 {
+    public static void main(String[] args) {
+        String categoria;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a idade: ");
+        int idade = scanner.nextInt();
+        if ((idade &#62;= 5) && (idade &#60;= 7)) {
+            categoria = "infantil A";
+        } else {
+            if ((idade &#62;= 8) && (idade &#60;= 10)) {
+                categoria = "infantil B";
+            } else {
+                if ((idade &#62;= 11) && (idade &#60;= 13)) {
+                    categoria = "juvenil A";
+                } else {
+                    if ((idade &#62;= 14) && (idade &#60;= 17)) {
+                        categoria = "juvenil B";
+                    } else {
+                        if((idade &#62;= 18)){
+                            categoria = "adulto";
+                        } else {
+                            categoria = "não definida";
+                        }
+                    }
+                }
+            }
+        }
+        System.out.print("Categoria: " + categoria);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio11.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio11.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>12. Tendo como dados de entrada a altura e o sexo de uma pessoa (masculino (M) e (F) feminino), construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:</p>
+<ul>
+<li>para homens: (72.7 * h) - 58</li>
+<li>para mulheres: (62.1 * h) - 44.7</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex12-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex12-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex12-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio12"</span>
     <span class="cor1">var</span> <strong>h</strong>: <span class="cor3">real</span>
     <strong>sexo</strong>: <span class="cor3">caractere</span>
 <span class="cor1">inicio</span>
@@ -283,22 +699,56 @@
         <span class="cor1">fimse</span>
     <span class="cor1">fimse</span>
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio12.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio12.alg</span></a></p>
-            <hr>	
-            <p>13. Um vendedor necessita de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a tabela abaixo. Se o código digitado não existir, peça ao usuário que entre com um código válido.</p>
-            <table class="table table-bordered">
-                <thead>
-                    <tr><th>Código do produto</th><th>Preço por unidade</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>1001</td><td>R$ 5,32</td></tr>
-                    <tr><td>1324</td><td>R$ 6,45</td></tr>
-                    <tr><td>6548</td><td>R$ 2,37</td></tr>
-                    <tr><td>0987</td><td>R$ 5,32</td></tr>
-                    <tr><td>7623</td><td>R$ 6,45</td></tr>
-                </tbody>
-            </table>	
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio13"</span>
+<p><a href="assets/exercises/visualg/Exercicio12.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio12.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex12-jv">
+<pre><code>import java.util.Locale;
+import java.util.Scanner;
+public class Exercicio12 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
+        System.out.print("Digite o sexo (m | f): ");
+        char sexo = scanner.next().charAt(0);
+        System.out.print("Digite a altura: ");
+        double h = scanner.nextDouble();
+        if ((sexo == 'm') || (sexo == 'M')) {
+            System.out.print("Peso ideal: " + (72.7 * h - 58));
+        } else {
+            if((sexo == 'f') || (sexo == 'F')){
+                System.out.print("Peso ideal: " + (62.1 * h - 44.7));
+            }
+        }
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio12.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio12.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>13. Um vendedor necessita de um algoritmo que calcule o preço total devido por um cliente. O algoritmo deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a tabela abaixo. Se o código digitado não existir, peça ao usuário que entre com um código válido.</p>
+<table class="table table-bordered">
+<thead>
+<tr><th>Código do produto</th><th>Preço por unidade</th></tr>
+</thead>
+<tbody>
+<tr><td>1001</td><td>R$ 5,32</td></tr>
+<tr><td>1324</td><td>R$ 6,45</td></tr>
+<tr><td>6548</td><td>R$ 2,37</td></tr>
+<tr><td>0987</td><td>R$ 5,32</td></tr>
+<tr><td>7623</td><td>R$ 6,45</td></tr>
+</tbody>
+</table>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex13-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex13-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex13-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio13"</span>
     <span class="cor1">var</span> <strong>codigoProduto</strong>, <strong>quantidade</strong>: <span class="cor3">inteiro</span>
     <strong>precoUnidade</strong>, <strong>precoTotal</strong>: <span class="cor3">real</span>
 <span class="cor1">inicio</span>
@@ -323,22 +773,64 @@
     <strong>precoTotal</strong> &#60;- <strong>quantidade</strong> * <strong>precoUnidade</strong>
     <span class="cor1">escreva</span>(<span class="cor2">"Preço total: "</span>,<strong>precoTotal</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio13.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio13.alg</span></a></p>
-            <hr>	
-            <p>14. Uma empresa concederá um aumento de salário aos seus funcionários, variável de acordo com o cargo, conforme a tabela abaixo. Faça um algoritmo que leia o salário e o cargo de um funcionário (por meio do código) e calcule o novo salário. Se o cargo do funcionário não estiver na tabela, ele deverá, então, receber 40% de aumento. Mostre o salário antigo, o novo salário e a diferença.</p>
-            <div>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr><th>Código</th><th>Cargo</th><th>Percentual</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>101</td><td>Gerente</td><td>10%</td></tr>
-                        <tr><td>102</td><td>Engenheiro</td><td>20%</td></tr>
-                        <tr><td>103</td><td>Técnico</td><td>30%</td></tr>
-                    </tbody>
-                </table>	
-            </div>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio14"</span>
+<p><a href="assets/exercises/visualg/Exercicio13.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio13.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex13-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio13 {
+    public static void main(String[] args) {
+        double precoUnidade = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o código do produto: ");
+        int codigoProduto = scanner.nextInt();
+        while ((codigoProduto != 1001) && (codigoProduto != 1324) && (codigoProduto != 6548) && (codigoProduto != 987) && (codigoProduto != 7623)) {
+            System.out.print("Código inválido! Tente novamente (1001 | 1324 | 6548 | 0987 | 7623): ");
+        }
+        System.out.print("Digite a quantidade: ");
+        int quantidade = scanner.nextInt();
+        switch (codigoProduto) {
+            case 1001:
+            case 987:
+                precoUnidade = 5.32;
+                break;
+            case 1324:
+            case 7623:
+                precoUnidade = 6.45;
+                break;
+            case 6548:
+                precoUnidade = 2.37;
+                break;
+        }
+        double precoTotal = quantidade * precoUnidade; 
+        System.out.print("Preço total: " + precoTotal);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio13.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio13.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>14. Uma empresa concederá um aumento de salário aos seus funcionários, variável de acordo com o cargo, conforme a tabela abaixo. Faça um algoritmo que leia o salário e o cargo de um funcionário (por meio do código) e calcule o novo salário. Se o cargo do funcionário não estiver na tabela, ele deverá, então, receber 40% de aumento. Mostre o salário antigo, o novo salário e a diferença.</p>
+<table class="table table-bordered">
+<thead>
+<tr><th>Código</th><th>Cargo</th><th>Percentual</th></tr>
+</thead>
+<tbody>
+<tr><td>101</td><td>Gerente</td><td>10%</td></tr>
+<tr><td>102</td><td>Engenheiro</td><td>20%</td></tr>
+<tr><td>103</td><td>Técnico</td><td>30%</td></tr>
+</tbody>
+</table>	
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex14-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex14-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex14-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio14"</span>
     <span class="cor1">var</span> <strong>salario</strong>, <strong>novoSalario</strong>, <strong>diferenca</strong>: <span class="cor3">real</span>
     <strong>codigoCargo</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
@@ -361,15 +853,61 @@
     <span class="cor1">escreval</span>(<span class="cor2">"Novo salário: "</span>,<strong>novoSalario</strong>)
     <span class="cor1">escreval</span>(<span class="cor2">"Diferença: "</span>,<strong>diferenca</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio14.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio14.alg</span></a></p>
-            <hr>	
-            <p>15. Escrever um algoritmo que lê um conjunto de 4 valores i, a, b, c, onde i é um valor inteiro e positivo e a, b, c, são quaisquer valores reais e os escreva. A seguir:</p>
-            <ul>
-                <li>Se i = 1 escrever os três valores a, b, c em ordem crescente.</li>
-                <li>Se i = 2 escrever os três valores a, b, c em ordem decrescente.</li>
-                <li>Se i = 3 escrever os três valores a, b, c de forma que o maior entre a, b, c fique dentre os dois.</li>
-            </ul>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio15"</span>
+<p><a href="assets/exercises/visualg/Exercicio14.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio14.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex14-jv">
+<pre><code>import java.util.Locale;
+import java.util.Scanner;
+public class Exercicio14 {
+    public static void main(String[] args) {
+        double novoSalario;        
+        Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
+        System.out.print("Digite o salário: ");
+        double salario = scanner.nextDouble();
+        System.out.print("Digite o código do cargo: ");
+        int codigoCargo = scanner.nextInt();
+        switch (codigoCargo) {
+            case 101:
+                novoSalario = salario + salario * 10 / 100;
+                break;
+            case 102:
+                novoSalario = salario + salario * 20 / 100;
+                break;
+            case 103:
+                novoSalario = salario + salario * 30 / 100;
+                break;
+            default:
+                novoSalario = salario + salario * 40 / 100;
+                break;
+        }
+        double diferenca = novoSalario - salario;
+        System.out.println("Salário antigo: " + salario);
+        System.out.println("Novo salário: " + novoSalario);
+        System.out.println("Diferença: " + diferenca);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio14.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio14.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>15. Escrever um algoritmo que lê um conjunto de 4 valores i, a, b, c, onde i é um valor inteiro e positivo e a, b, c, são quaisquer valores reais e os escreva. A seguir:</p>
+<ul>
+<li>Se i = 1 escrever os três valores a, b, c em ordem crescente.</li>
+<li>Se i = 2 escrever os três valores a, b, c em ordem decrescente.</li>
+<li>Se i = 3 escrever os três valores a, b, c de forma que o maior entre a, b, c fique dentre os dois.</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex15-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex15-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex15-va">
+ <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio15"</span>
     <span class="cor1">var</span> <strong>i</strong>: <span class="cor3">inteiro</span>
     <strong>a</strong>, <strong>b</strong>, <strong>c</strong>, <strong>menor</strong>, <strong>medio</strong>, <strong>maior</strong>: <span class="cor3">real</span>
 <span class="cor1">inicio</span>
@@ -425,10 +963,90 @@
             <span class="cor1">escreva</span>(<span class="cor2">"O maior entre os outros dois: "</span>,<strong>menor</strong>,<strong>maior</strong>,<strong>medio</strong>,<span class="cor2">" ou "</span>,<strong>medio</strong>,<strong>maior</strong>,<strong>menor</strong>)
     <span class="cor1">fimescolha</span>
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio15.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio15.alg</span></a></p>
-            <hr>	
-            <p>16. A padaria Hotpão vende uma certa quantidade de pães franceses e uma quantidade de broas a cada dia. Cada pãozinho custa R$ 0,12 e a broa custa R$ 1,50. Ao final do dia, o dono quer saber quanto arrecadou com a venda dos pães e broas (juntos), e quanto deve guardar numa conta de poupança (10% do total arrecadado). Você foi contratado para fazer os cálculos para o dono. Com base nestes fatos, faça um algoritmo para ler as quantidades de pães e de broas, e depois calcular os dados solicitados.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio16"</span>
+<p><a href="assets/exercises/visualg/Exercicio15.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio15.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex15-jv">
+<pre><code>import java.util.Locale;
+import java.util.Scanner;
+public class Exercicio15 {
+    public static void main(String[] args) {
+        double menor = 0;
+        double medio = 0;
+        double maior = 0;
+        Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
+        System.out.print("Digite o valor de i (1 | 2 | 3): ");
+        int i = scanner.nextInt();
+        System.out.print("Digite o valor de a: ");
+        double a = scanner.nextDouble();
+        System.out.print("Digite o valor de b: ");
+        double b = scanner.nextDouble();
+        System.out.print("Digite o valor de c: ");
+        double c = scanner.nextDouble();
+        if ((a &#62; b) && (a &#62; c)) {
+            if (b &#62; c) {
+                maior = a;
+                medio = b;
+                menor = c;
+            } else {
+                maior = a;
+                medio = c;
+                menor = b;
+            }
+        } else {
+            if ((b &#62; a) && (b &#62; c)) {
+                if (a &#62; c) {
+                    maior = b;
+                    medio = a;
+                    menor = c;
+                } else {
+                    maior = b;
+                    medio = c;
+                    menor = a;
+                }
+            } else {
+                if ((c &#62; a) && (c &#62; b)) {
+                    if (a &#62; b) {
+                        maior = c;
+                        medio = a;
+                        menor = b;
+                    } else {
+                        maior = c;
+                        medio = b;
+                        menor = a;
+                    }
+                }
+            }
+        }
+        switch (i) {
+            case 1:
+                System.out.print("Os números em ordem crescente: " + menor + ", " + medio + ", " + maior);
+                break;
+            case 2:
+                System.out.print("Os números em ordem decrescente: " + maior + ", " + medio + ", " + menor);
+                break;
+            case 3:
+                System.out.print("O maior entre os outros dois: " + menor + ", " + maior + ", " + medio + " ou " + medio + ", " + maior + ", " + menor);
+                break;
+        }
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio15.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio15.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>16. A padaria Hotpão vende uma certa quantidade de pães franceses e uma quantidade de broas a cada dia. Cada pãozinho custa R$ 0,12 e a broa custa R$ 1,50. Ao final do dia, o dono quer saber quanto arrecadou com a venda dos pães e broas (juntos), e quanto deve guardar numa conta de poupança (10% do total arrecadado). Você foi contratado para fazer os cálculos para o dono. Com base nestes fatos, faça um algoritmo para ler as quantidades de pães e de broas, e depois calcular os dados solicitados.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex16-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex16-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex16-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio16"</span>
     <span class="cor1">var</span> <strong>quantidadePao</strong>, <strong>quantidadeBroa</strong>: <span class="cor3">inteiro</span>
     <strong>total</strong>, <strong>totalPoupanca</strong>: <span class="cor3">real</span>
 <span class="cor1">inicio</span>
@@ -441,10 +1059,39 @@
     <span class="cor1">escreval</span>(<span class="cor2">"Valor arrecadado: R$"</span>,<strong>total</strong>)
     <span class="cor1">escreval</span>(<span class="cor2">"Valor para poupança: R$"</span>,<strong>totalPoupanca</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio16.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio16.alg</span></a></p>
-            <hr>	
-            <p>17. Faça um algoritmo para ler o salário de um funcionário e aumentá-Io em 15%. Após o aumento, desconte 8% de impostos. Imprima o salário inicial, o salário com o aumento e o salário final.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio17"</span>
+<p><a href="assets/exercises/visualg/Exercicio16.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio16.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex16-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio16 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);        
+        System.out.print("Digite a quantidade de pães: ");
+        int quantidadePao = scanner.nextInt();        
+        System.out.print("Digite a quantidade de broas: ");
+        int quantidadeBroa = scanner.nextInt();        
+        double total = quantidadePao * 0.12 + quantidadeBroa * 1.50;
+        double totalPoupanca = total * 10 / 100;        
+        System.out.println("Valor arrecadado: R$ " + total);
+        System.out.println("Valor para poupança: R$ " + totalPoupanca);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio16.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio16.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>17. Faça um algoritmo para ler o salário de um funcionário e aumentá-Io em 15%. Após o aumento, desconte 8% de impostos. Imprima o salário inicial, o salário com o aumento e o salário final.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex17-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex17-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex17-va">
+ <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio17"</span>
     <span class="cor1">var</span> <strong>salarioInicial</strong>, <strong>salarioAumento</strong>, <strong>salarioFinal</strong>: <span class="cor3">real</span>
 <span class="cor1">inicio</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Digite o salário: "</span>)
@@ -455,10 +1102,40 @@
     <span class="cor1">escreval</span>(<span class="cor2">"Salário com aumento: "</span>,<strong>salarioAumento</strong>)
     <span class="cor1">escreval</span>(<span class="cor2">"Salário final: "</span>,<strong>salarioFinal</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio17.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio17.alg</span></a></p>
-            <hr>	
-            <p>18. Escreva um programa que leia uma lista contendo o peso de uma série de indivíduos em um vetor de números reais. A lista possui 150 elementos. Depois que a lista foi toda inserida o programa deve procurar e imprimir qual a posição no vetor onde está o menor peso.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio18"</span>
+<p><a href="assets/exercises/visualg/Exercicio17.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio17.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex17-jv">
+<pre><code>import java.util.Locale;
+import java.util.Scanner;
+public class Exercicio17 {
+    public static void main(String[] args) {        
+        Scanner scanner = new Scanner(System.in); 
+        scanner.useLocale(Locale.US);
+        System.out.print("Digite o salário: ");
+        double salarioInicial = scanner.nextDouble();
+        double salarioAumento = salarioInicial + salarioInicial * 0.15;
+        double salarioFinal = salarioAumento - salarioAumento * 0.08;
+        System.out.println("Salário inicial: " + salarioInicial);
+        System.out.println("Salário com aumento: " + salarioAumento);
+        System.out.println("Salário final: " + salarioFinal);        
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio17.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio17.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>18. Escreva um programa que leia uma lista contendo o peso de uma série de indivíduos em um vetor de números reais. A lista possui 150 elementos. Depois que a lista foi toda inserida o programa deve procurar e imprimir qual a posição no vetor onde está o menor peso.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex18-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex18-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex18-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio18"</span>
     <span class="cor1">var</span> <strong>vet</strong>: <span class="cor3">vetor</span> [<span class="cor2">0..149</span>] <span class="cor1">de</span> <span class="cor3">real</span>
     <strong>peso</strong>: <span class="cor3">real</span>
     <strong>i</strong>, <strong>posicao</strong>: <span class="cor3">inteiro</span>
@@ -477,10 +1154,49 @@
     <span class="cor1">fimpara</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Na posição"</span>,<strong>posicao</strong>,<span class="cor2">" está o menor peso, que é"</span>,<strong>peso</strong>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio18.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio18.alg</span></a></p>
-            <hr>	
-            <p>19. A fábrica de refrigerantes Meia-Cola vende seu produto em três formatos: lata de 350 ml, garrafa de 600 ml e garrafa de 2 litros. Se um comerciante compra uma determinada quantidade de cada formato, faça um algoritmo para calcular quantos litros de refrigerante ele comprou.</p>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio19"</span>
+<p><a href="assets/exercises/visualg/Exercicio18.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio18.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex18-jv">
+<pre><code>import java.util.Locale;
+import java.util.Scanner;
+public class Exercicio18 {
+    public static void main(String[] args) {
+        double peso;
+        int posicao = 0;
+        double vet[] = new double[150];
+        Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);        
+        for (int i = 0; i &#60; vet.length; i++) {
+            System.out.print("Digite o peso: ");
+            peso = scanner.nextDouble();
+            vet[i] = peso;
+        }        
+        peso = vet[0];        
+        for (int i = 0; i &#60; vet.length; i++) {
+            if (vet[i] &#60; peso) {
+                peso = vet[i];
+                posicao = i;
+            }
+        }        
+        System.out.print("Na posição: " + posicao + " está o menor peso, que é " + peso);
+    }
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio18.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio18.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>19. A fábrica de refrigerantes Meia-Cola vende seu produto em três formatos: lata de 350 ml, garrafa de 600 ml e garrafa de 2 litros. Se um comerciante compra uma determinada quantidade de cada formato, faça um algoritmo para calcular quantos litros de refrigerante ele comprou.</p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex19-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex19-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex19-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio19"</span>
     <span class="cor1">var</span> <strong>quantidadeF1</strong>, <strong>quantidadeF2</strong>, <strong>quantidadeF3</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Digite a quantidade de latas (350ml): "</span>)
@@ -491,16 +1207,44 @@
     <span class="cor1">leia</span>(<strong>quantidadeF3</strong>)
     <span class="cor1">escreva</span>(<span class="cor2">"Quantidade em litros: "</span>,<strong>quantidadeF1</strong> * <span class="cor2">0.350</span> + <strong>quantidadeF2</strong> * <span class="cor2">0.600</span> + <strong>quantidadeF3</strong> * <span class="cor2">2</span>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio19.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio19.alg</span></a></p>
-            <hr>	
-            <p>20. Faça um algoritmo que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:</p>
-            <ul>
-                <li>a idade dessa pessoa em anos;</li>
-                <li>a idade dessa pessoa em meses;</li>
-                <li>a idade dessa pessoa em semanas;</li>
-                <li>a idade dessa pessoa em dias.</li>
-            </ul>
-            <pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio20"</span>
+<p><a href="assets/exercises/visualg/Exercicio19.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio19.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex19-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio19 {
+    public static void main(String[] args) {        
+        Scanner scanner = new Scanner(System.in);
+        System.out. print("Digite a quantidade de latas (350ml): ");
+        int quantidadeF1 = scanner.nextInt();
+        System.out.print("Digite a quantidade de garrafas (600ml): ");
+        int quantidadeF2 = scanner.nextInt();
+        System.out.print("Digite a quantidade de garrafas (2l): ");
+        int quantidadeF3 = scanner.nextInt();
+        System.out.print("Quantidade em litros: " + (quantidadeF1 * 0.350 + quantidadeF2 * 0.600 + quantidadeF3 * 2));
+    }    
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio19.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio19.java</span></a></p>
+</div>
+</div>
+<hr>
+<p>20. Faça um algoritmo que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:</p>
+<ul>
+<li>a idade dessa pessoa em anos;</li>
+<li>a idade dessa pessoa em meses;</li>
+<li>a idade dessa pessoa em semanas;</li>
+<li>a idade dessa pessoa em dias.</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ex20-va">VisuAlg</a>
+</li>
+<li>
+<a data-toggle="tab" href="#ex20-jv">Java</a>
+</li>
+</ul>            
+<div class="tab-content">
+<div class="tab-pane active" id="ex20-va">
+<pre><code><span class="cor1">algoritmo</span> <span class="cor2">"Exercicio20"</span>
     <span class="cor1">var</span> <strong>anoNascimento</strong>, <strong>anoAtual</strong>, <strong>idadeAno</strong>: <span class="cor3">inteiro</span>
 <span class="cor1">inicio</span>
     <span class="cor1">escreva</span>(<span class="cor2">"Digite o ano de nascimento: "</span>)
@@ -517,7 +1261,32 @@
     <span class="cor1">escreval</span>(<span class="cor2">"Idade em semanas: "</span>, <strong>idadeAno</strong> * <span class="cor2">52</span>)
     <span class="cor1">escreval</span>(<span class="cor2">"Idade em dias: "</span>, <strong>idadeAno</strong> * <span class="cor2">365</span>)
 <span class="cor1">fimalgoritmo</span></code></pre>
-            <p><a href="assets/exercises/visualg/Exercicio20.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio20.alg</span></a></p>
-        </div>
-    </body>
+<p><a href="assets/exercises/visualg/Exercicio20.alg" target="_blank"><i class="fas fa-download"></i><span>Exercicio20.alg</span></a></p>
+</div>
+<div class="tab-pane" id="ex20-jv">
+<pre><code>import java.util.Scanner;
+public class Exercicio20 {    
+    public static void main(String[] args) {        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o ano de nascimento: ");
+        int anoNascimento = scanner.nextInt();
+        System.out.print("Digite o ano atual: ");
+        int anoAtual = scanner.nextInt();
+        while (anoAtual &#60;= anoNascimento) {
+            System.out.print("O ano atual não pode ser inferior ou igual ao ano de nascimento! Tente novamente: ");
+            anoAtual = scanner.nextInt();
+        }
+        int idadeAno = anoAtual - anoNascimento;
+        System.out.println("Idade em anos: " + idadeAno);
+        System.out.println("Idade em meses: " + idadeAno * 12);
+        System.out.println("Idade em dias: " + idadeAno * 365);  
+    }    
+}</code></pre>
+<p><a href="assets/exercises/java/Exercicio20.java" target="_blank"><i class="fas fa-download"></i><span>Exercicio20.java</span></a></p>
+</div>
+</div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
 </html>
