@@ -1,6 +1,12 @@
-body {
-    background-color: #FDFDFD; 
+body {     
     margin: 82px 20px 20px 20px;
+}
+
+body,
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a:hover {
+    background-color: #FDFDFD;
 }
 
 #conteudo { 
@@ -75,7 +81,7 @@ pre code {
 a,
 a:hover,
 a:focus {
-    color: inherit;
+    color: inherit !important;
 }
 
 a span {
@@ -93,4 +99,3 @@ th, td {
 hr {
     border-top: solid 1px #DDD;
 }
-
